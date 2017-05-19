@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>1</queueId>
+  <timestamp>1492694379647</timestamp>
+  <startTime>1492694379675</startTime>
+  <result>FAILURE</result>
+  <duration>15792</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>D:\Documents\Plugin_and _Utility\Jenkins_Plugin\Clair_Plugin\clair-docker-scanner_latest\work\workspace\Clair_test</workspace>
+  <hudsonVersion>1.625.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

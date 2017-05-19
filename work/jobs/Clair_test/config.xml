@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>Node1</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <org.jenkinsci.plugins.clairdockerscannerbuildstep.ClairDockerScannerBuilder plugin="Docker-Security-Scanner@1.0-SNAPSHOT">
+      <localImage>jenkins</localImage>
+      <high>999</high>
+      <low>999</low>
+      <medium>999</medium>
+      <Severity>true</Severity>
+      <localAnalyzerPath>/home/jenkins/analyze-local-images</localAnalyzerPath>
+    </org.jenkinsci.plugins.clairdockerscannerbuildstep.ClairDockerScannerBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

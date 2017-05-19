@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.clairdockerscannerbuildstep.ClairScannerAction plugin="clair-docker-scanner@1.0-SNAPSHOT">
+      <resultsUrl>../artifact/scanout.html</resultsUrl>
+      <build class="build" reference="../../.."/>
+      <localImage>jenkins</localImage>
+    </org.jenkinsci.plugins.clairdockerscannerbuildstep.ClairScannerAction>
+  </actions>
+  <queueId>1</queueId>
+  <timestamp>1494831410630</timestamp>
+  <startTime>1494831410642</startTime>
+  <result>SUCCESS</result>
+  <duration>65511</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>Node1</builtOn>
+  <workspace>/var/tmp/Jenkins_Slave2/workspace/Clair_test</workspace>
+  <hudsonVersion>1.625.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

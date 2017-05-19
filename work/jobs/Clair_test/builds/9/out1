@@ -1,0 +1,1301 @@
+<!doctype html>
+<div id=Heading style="background:#33AFFF ;"><h2 align="center" style="color:white;"><b>Clair Report - tomcat:8.0<br></b></h2>
+</div
+<html lang = "en">
+<head>
+<meta charset = "utf-8">
+<title>Clair Inputs</title>
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"" rel = "stylesheet">
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<script>
+$(function() {
+$( "#tabs-1" ).tabs();
+});
+</script>
+<script type="text/javascript">$(document).ready(function() { $("button").click(function(e) {e.preventDefault();
+ var data_type = 'data:application/vnd.ms-excel';
+var table_div = document.getElementById('tabs-2'); var table_div1 = document.getElementById('tabs-3');var table_div2 = document.getElementById('tabs-4');
+  var table_div3 = document.getElementById('tabs-5');var table_html = table_div.outerHTML.replace(/ /g, '%20');var table_html1 = table_div1.outerHTML.replace(/ /g, '%20');var table_html2 = table_div2.outerHTML.replace(/ /g, '%20'); var table_html3 = table_div3.outerHTML.replace(/ /g, '%20');var a = document.createElement('a');a.href = data_type + ', ' + table_html+table_html1+table_html2+table_html3;a.download = 'Clair_Report' + '.xls'; a.click(); });});
+</script>
+<style>
+#tabs-1{font-size: 13px;}
+.ui-widget-header {
+background:#33AFFF;
+border: 1px solid #33AFFF;
+color: #FFFFFF;
+font-weight: bold;
+font-family: Helvetica, Arial, sans-serif;
+}
+</style>
+<style>
+table {
+border-collapse: collapse;
+width: 100%;
+font-family: Helvetica, Arial, sans-serif;
+}
+
+th, td {
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+text-align: left;
+background-color: #33AFFF;
+color: white;
+}
+</style>
+<style>
+.button { display: inline-block; padding: 10px 20px;font-size: 16px; cursor: pointer; text-align: center;text-decoration: none; outline: none;color: #fff;background-color: #33AFFF; border: none; border-radius: 15px; box-shadow: 0 5px #999; float: right;	}
+.button:hover {background-color: #33AFFF}.button:active { background-color: #33AFFF; box-shadow: 0 3px #666; transform: translateY(4px);}
+</style>
+</head>
+
+<body>
+<button class="button">Export to Excel</button><br></br>
+<h4 style="color:#33AFFF ;"><u><b>Severity Summary</b></u></h4>
+<table style="width:50%; font-size: 13px;">
+<tr>
+<th>High</th>
+<th>Medium</th>
+<th>Low</th>
+<th>Negligible</th>
+</tr>
+<tr>
+<td><div class="high-count"></div></td>
+<td><div class="med-count"></div></td>
+<td><div class="low-count"></div></td>
+<td><div class="neg-count"></div></td>
+</tr>
+
+</table>
+<br><br>
+<div id="donutchart" style="width: 800px; height: 300px;"></div>
+<p></p>
+<p></p>
+<div id = "tabs-1">
+<ul>
+<li><a href = "#tabs-2">High</a></li>
+<li><a href = "#tabs-3">Medium</a></li>
+<li><a href = "#tabs-4">Low</a></li>
+<li><a href = "#tabs-5">Negligible</a></li>
+</ul>
+<div id = "tabs-2">
+<table>
+<tr>
+<th align="center">ID</th>
+<th align="center">Description</th>
+<th align="center">Package</th>
+<th align="center">Link</th>
+</tr>
+<tr>
+<td width="10%"><font color="#b30000  ">CVE-2017-5337</font></td>
+<td width="45%">
+	Multiple heap-based buffer overflows in the read_attribute function in GnuTLS
+	before 3.3.26 and 3.5.x before 3.5.8 allow remote attackers to have unspecified
+	impact via a crafted OpenPGP certificate.
+
+	</td>
+<td width="20%">      gnutls28 @ 3.3.8-6+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-5337">         https://security-tracker.debian.org/tracker/CVE-2017-5337</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#b30000  ">CVE-2016-7942</font></td>
+<td width="45%">
+	
+	
+
+
+	The XGetImage function in X.org libX11 before 1.6.4 might allow remote X servers
+	to gain privileges via vectors involving image type and geometry, which triggers
+	out-of-bounds read operations.
+
+	</td>
+<td width="20%">      libx11 @ 2:1.6.2-3</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-7942">         https://security-tracker.debian.org/tracker/CVE-2016-7942</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#b30000  ">CVE-2016-7943</font></td>
+<td width="45%">
+	
+	
+
+
+	The XListFonts function in X.org libX11 before 1.6.4 might allow remote X
+	servers to gain privileges via vectors involving length fields, which trigger
+	out-of-bounds write operations.
+
+	</td>
+<td width="20%">      libx11 @ 2:1.6.2-3</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-7943">         https://security-tracker.debian.org/tracker/CVE-2016-7943</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#b30000  ">CVE-2016-7167</font></td>
+<td width="45%">
+	
+	
+
+
+	Multiple integer overflows in the (1) curl_escape, (2) curl_easy_escape, (3)
+	curl_unescape, and (4) curl_easy_unescape functions in libcurl before 7.50.3
+	allow attackers to have unspecified impact via a string of length 0xffffffff,
+	which triggers a heap-based buffer overflow.
+
+	</td>
+<td width="20%">      curl @ 7.38.0-4+deb8u5</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-7167">         https://security-tracker.debian.org/tracker/CVE-2016-7167</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#b30000  ">CVE-2016-7951</font></td>
+<td width="45%">
+	
+	
+
+
+	Multiple integer overflows in X.org libXtst before 1.2.3 allow remote X servers
+	to trigger out-of-bounds memory access operations by leveraging the lack of
+	range checks.
+
+	</td>
+<td width="20%">      libxtst @ 2:1.2.2-1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-7951">         https://security-tracker.debian.org/tracker/CVE-2016-7951</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#b30000  ">CVE-2017-5336</font></td>
+<td width="45%">
+	
+	
+
+
+	Stack-based buffer overflow in the cdk_pk_get_keyid function in
+	lib/opencdk/pubkey.c in GnuTLS before 3.3.26 and 3.5.x before 3.5.8 allows
+	remote attackers to have unspecified impact via a crafted OpenPGP certificate.
+
+	</td>
+<td width="20%">      gnutls28 @ 3.3.8-6+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-5336">         https://security-tracker.debian.org/tracker/CVE-2017-5336</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#b30000  ">CVE-2016-2779</font></td>
+<td width="45%">
+	
+	
+
+
+	runuser in util-linux allows local users to escape to the parent session via
+	a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input
+	buffer.
+
+	</td>
+<td width="20%">      util-linux @ 2.25.2-6</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-2779">         https://security-tracker.debian.org/tracker/CVE-2016-2779</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#b30000  ">CVE-2017-5334</font></td>
+<td width="45%">
+	
+	
+
+
+	Double free vulnerability in the gnutls_x509_ext_import_proxy function in GnuTLS
+	before 3.3.26 and 3.5.x before 3.5.8 allows remote attackers to have unspecified
+	impact via crafted policy language information in an X.509 certificate with a
+	Proxy Certificate Information extension.
+
+	</td>
+<td width="20%">      gnutls28 @ 3.3.8-6+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-5334">         https://security-tracker.debian.org/tracker/CVE-2017-5334</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#b30000  ">CVE-2016-4448</font></td>
+<td width="45%">
+	
+	
+
+
+	Format string vulnerability in libxml2 before 2.9.4 allows attackers to have
+	unspecified impact via format string specifiers in unknown vectors.
+
+	</td>
+<td width="20%">      libxml2 @ 2.9.1+dfsg1-5+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-4448">         https://security-tracker.debian.org/tracker/CVE-2016-4448</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#b30000  ">CVE-2014-9761</font></td>
+<td width="45%">
+	
+	
+
+
+	Multiple stack-based buffer overflows in the GNU C Library (aka glibc or libc6)
+	before 2.23 allow context-dependent attackers to cause a denial of service
+	(application crash) or possibly execute arbitrary code via a long argument to
+	the (1) nan, (2) nanf, or (3) nanl function.
+
+	</td>
+<td width="20%">      glibc @ 2.19-18+deb8u7</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2014-9761">         https://security-tracker.debian.org/tracker/CVE-2014-9761</a></td>
+</tr>
+</table>
+
+</div>
+<div id = "tabs-3">
+<table>
+<tr>
+<th align="center">ID</th>
+<th align="center">Description</th>
+<th align="center">Package</th>
+<th align="center">Link</th>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2016-7945</font></td>
+<td width="45%">
+	
+	
+
+
+	Multiple integer overflows in X.org libXi before 1.7.7 allow remote X servers
+	to cause a denial of service (out-of-bounds memory access or infinite loop) via
+	vectors involving length fields.
+
+	</td>
+<td width="20%">      libxi @ 2:1.7.4-1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-7945">         https://security-tracker.debian.org/tracker/CVE-2016-7945</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2016-1024</font></td>
+<td width="45%">
+	
+	
+
+
+	The parse_charstrings function in type1/t1load.c in FreeType 2 before 2.7 does
+	not ensure that a font contains a glyph name, which allows remote attackers
+	to cause a denial of service (heap-based buffer over-read) or possibly have
+	unspecified other impact via a crafted file.
+
+	</td>
+<td width="20%">      freetype @ 2.5.2-3+deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-10244">         https://security-tracker.debian.org/tracker/CVE-2016-10244</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2016-7946</font></td>
+<td width="45%">
+	
+	
+
+
+	X.org libXi before 1.7.7 allows remote X servers to cause a denial of service
+	(infinite loop) via vectors involving length fields.
+
+	</td>
+<td width="20%">      libxi @ 2:1.7.4-1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-7946">         https://security-tracker.debian.org/tracker/CVE-2016-7946</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2016-5011</font></td>
+<td width="45%">
+	
+	
+
+
+	The parse_dos_extended function in partitions/dos.c in the libblkid library in
+	util-linux allows physically proximate attackers to cause a denial of service
+	(memory consumption) via a crafted MSDOS partition table with an extended
+	partition boot record at zero offset.
+
+	</td>
+<td width="20%">      util-linux @ 2.25.2-6</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-5011">         https://security-tracker.debian.org/tracker/CVE-2016-5011</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2017-7244</font></td>
+<td width="45%">
+	
+	
+
+
+	The _pcre32_xclass function in pcre_xclass.c in libpcre1 in PCRE 8.40 allows
+	remote attackers to cause a denial of service (invalid memory read) via a
+	crafted file.
+
+	</td>
+<td width="20%">      pcre3 @ 2:8.35-3.3+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-7244">         https://security-tracker.debian.org/tracker/CVE-2017-7244</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2017-7186</font></td>
+<td width="45%">
+	
+	
+
+
+	libpcre1 in PCRE 8.40 and libpcre2 in PCRE2 10.23 allow remote attackers
+	to cause a denial of service (segmentation violation for read access, and
+	application crash) by triggering an invalid Unicode property lookup.
+
+	</td>
+<td width="20%">      pcre3 @ 2:8.35-3.3+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-7186">         https://security-tracker.debian.org/tracker/CVE-2017-7186</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2017-7586</font></td>
+<td width="45%">
+	
+	
+
+
+	In libsndfile before 1.0.28, an error in the "header_read()" function (common.c)
+	when handling ID3 tags can be exploited to cause a stack-based buffer overflow
+	via a specially crafted FLAC file.
+
+	</td>
+<td width="20%">      libsndfile @ 1.0.25-9.1+deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-7586">         https://security-tracker.debian.org/tracker/CVE-2017-7586</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2017-7585</font></td>
+<td width="45%">
+	
+	
+
+
+	In libsndfile before 1.0.28, an error in the "flac_buffer_copy()" function
+	(flac.c) can be exploited to cause a stack-based buffer overflow via a specially
+	crafted FLAC file.
+
+	</td>
+<td width="20%">      libsndfile @ 1.0.25-9.1+deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-7585">         https://security-tracker.debian.org/tracker/CVE-2017-7585</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2017-5335</font></td>
+<td width="45%">
+	
+	
+
+
+	The stream reading functions in lib/opencdk/read-packet.c in GnuTLS before
+	3.3.26 and 3.5.x before 3.5.8 allow remote attackers to cause a denial of
+	service (out-of-memory error and crash) via a crafted OpenPGP certificate.
+
+	</td>
+<td width="20%">      gnutls28 @ 3.3.8-6+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-5335">         https://security-tracker.debian.org/tracker/CVE-2017-5335</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2017-6508</font></td>
+<td width="45%">
+	
+	
+
+
+	CRLF injection vulnerability in the url_parse function in url.c in Wget through
+	1.19.1 allows remote attackers to inject arbitrary HTTP headers via CRLF
+	sequences in the host subcomponent of a URL.
+
+	</td>
+<td width="20%">      wget @ 1.16-1+deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-6508">         https://security-tracker.debian.org/tracker/CVE-2017-6508</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2015-2694</font></td>
+<td width="45%">
+	
+	
+
+
+	The kdcpreauth modules in MIT Kerberos 5 (aka krb5) 1.12.x and 1.13.x before
+	1.13.2 do not properly track whether a client's request has been validated,
+	which allows remote attackers to bypass an intended preauthentication
+	requirement by providing (1) zero bytes of data or (2) an arbitrary realm name,
+	related to plugins/preauth/otp/main.c and plugins/preauth/pkinit/pkinit_srv.c.
+
+	</td>
+<td width="20%">      krb5 @ 1.12.1+dfsg-19+deb8u2</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2015-2694">         https://security-tracker.debian.org/tracker/CVE-2015-2694</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2016-3120</font></td>
+<td width="45%">
+	
+	
+
+
+	The validate_as_request function in kdc_util.c in the Key Distribution Center
+	(KDC) in MIT Kerberos 5 (aka krb5) before 1.13.6 and 1.4.x before 1.14.3, when
+	restrict_anonymous_to_tgt is enabled, uses an incorrect client data structure,
+	which allows remote authenticated users to cause a denial of service (NULL
+	pointer dereference and daemon crash) via an S4U2Self request.
+
+	</td>
+<td width="20%">      krb5 @ 1.12.1+dfsg-19+deb8u2</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-3120">         https://security-tracker.debian.org/tracker/CVE-2016-3120</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2016-9318</font></td>
+<td width="45%">
+	
+	
+
+
+	libxml2 2.9.4 and earlier, as used in XMLSec 1.2.23 and earlier and other
+	products, does not offer a flag directly indicating that the current document
+	may be read but other files may not be opened, which makes it easier for remote
+	attackers to conduct XML External Entity (XXE) attacks via a crafted document.
+
+	</td>
+<td width="20%">      libxml2 @ 2.9.1+dfsg1-5+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-9318">         https://security-tracker.debian.org/tracker/CVE-2016-9318</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2016-3616</font></td>
+<td width="45%">
+	
+	
+
+
+	The cjpeg utility in libjpeg allows remote attackers to cause a denial of
+	service (NULL pointer dereference and application crash) or execute arbitrary
+	code via a crafted file.
+
+	</td>
+<td width="20%">      libjpeg-turbo @ 1:1.3.1-12</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-3616">         https://security-tracker.debian.org/tracker/CVE-2016-3616</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2016-7141</font></td>
+<td width="45%">
+	
+	
+
+
+	curl and libcurl before 7.50.2, when built with NSS and the libnsspem.so library
+	is available at runtime, allow remote attackers to hijack the authentication of
+	a TLS connection by leveraging reuse of a previously loaded client certificate
+	from file for a connection for which no certificate has been set, a different
+	vulnerability than CVE-2016-5420.
+
+	</td>
+<td width="20%">      curl @ 7.38.0-4+deb8u5</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-7141">         https://security-tracker.debian.org/tracker/CVE-2016-7141</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2016-1022</font></td>
+<td width="45%">
+	
+	
+
+
+	The iconv program in the GNU C Library (aka glibc or libc6) 2.25 and earlier,
+	when invoked with the -c option, enters an infinite loop when processing invalid
+	multi-byte input sequences, leading to a denial of service.
+
+	</td>
+<td width="20%">      glibc @ 2.19-18+deb8u7</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-10228">         https://security-tracker.debian.org/tracker/CVE-2016-10228</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2016-7952</font></td>
+<td width="45%">
+	
+	
+
+
+	X.org libXtst before 1.2.3 allows remote X servers to cause a denial of service
+	(infinite loop) via a reply in the (1) XRecordStartOfData, (2) XRecordEndOfData,
+	or (3) XRecordClientDied category without a client sequence and with attached
+	data.
+
+	</td>
+<td width="20%">      libxtst @ 2:1.2.2-1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-7952">         https://security-tracker.debian.org/tracker/CVE-2016-7952</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2015-3217</font></td>
+<td width="45%">
+	
+	
+
+
+	PCRE 7.8 and 8.32 through 8.37, and PCRE2 10.10 mishandle group empty matches,
+	which might allow remote attackers to cause a denial of service (stack-based
+	buffer overflow) via a crafted regular expression, as demonstrated by
+	/^(?:(?(1)\\.|([^\\\\W_])?)+)+$/.
+
+	</td>
+<td width="20%">      pcre3 @ 2:8.35-3.3+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2015-3217">         https://security-tracker.debian.org/tracker/CVE-2015-3217</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2015-5276</font></td>
+<td width="45%">
+	
+	
+
+
+	The std::random_device class in libstdc++ in the GNU Compiler Collection (aka
+	GCC) before 4.9.4 does not properly handle short reads from blocking sources,
+	which makes it easier for context-dependent attackers to predict the random
+	values via unspecified vectors.
+
+	</td>
+<td width="20%">      gcc-4.9 @ 4.9.2-10</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2015-5276">         https://security-tracker.debian.org/tracker/CVE-2015-5276</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#ff6600 ">CVE-2011-3389</font></td>
+<td width="45%">
+	
+	
+
+
+	The SSL protocol, as used in certain configurations in Microsoft Windows and
+	Microsoft Internet Explorer, Mozilla Firefox, Google Chrome, Opera, and other
+	products, encrypts data by using CBC mode with chained initialization vectors,
+	which allows man-in-the-middle attackers to obtain plaintext HTTP headers via
+	a blockwise chosen-boundary attack (BCBA) on an HTTPS session, in conjunction
+	with JavaScript code that uses (1) the HTML5 WebSocket API, (2) the Java
+	URLConnection API, or (3) the Silverlight WebClient API, aka a "BEAST" attack.
+
+	</td>
+<td width="20%">      gnutls28 @ 3.3.8-6+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2011-3389">         https://security-tracker.debian.org/tracker/CVE-2011-3389</a></td>
+</tr>
+</table>
+</div>
+<div id = "tabs-4">
+<table>
+<tr>
+<th>ID</th>
+<th>Description</th>
+<th>Package</th>
+<th>Link</th>
+</tr>
+<tr>
+<td width="10%"><font color="#666666">CVE-2015-5180</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      glibc @ 2.19-18+deb8u7</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2015-5180">         https://security-tracker.debian.org/tracker/CVE-2015-5180</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#666666">CVE-2016-9844</font></td>
+<td width="45%">
+	
+	
+
+
+	Buffer overflow in the zi_short function in zipinfo.c in Info-Zip UnZip 6.0
+	allows remote attackers to cause a denial of service (crash) via a large
+	compression method value in the central directory file header.
+
+	</td>
+<td width="20%">      unzip @ 6.0-16+deb8u2</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-9844">         https://security-tracker.debian.org/tracker/CVE-2016-9844</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#666666">CVE-2017-7407</font></td>
+<td width="45%">
+	
+	
+
+
+	The ourWriteOut function in tool_writeout.c in curl 7.53.1 might allow
+	physically proximate attackers to obtain sensitive information from process
+	memory in opportunistic circumstances by reading a workstation screen during use
+	of a --write-out argument ending in a '%' character, which leads to a heap-based
+	buffer over-read.
+
+	</td>
+<td width="20%">      curl @ 7.38.0-4+deb8u5</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-7407">         https://security-tracker.debian.org/tracker/CVE-2017-7407</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#666666">CVE-2016-9401</font></td>
+<td width="45%">
+	
+	
+
+
+	popd in bash might allow local users to bypass the restricted shell and cause a
+	use-after-free via a crafted address.
+
+	</td>
+<td width="20%">      bash @ 4.3-11+deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-9401">         https://security-tracker.debian.org/tracker/CVE-2016-9401</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#666666">CVE-2016-3189</font></td>
+<td width="45%">
+	
+	
+
+
+	Use-after-free vulnerability in bzip2recover in bzip2 1.0.6 allows remote
+	attackers to cause a denial of service (crash) via a crafted bzip2 file, related
+	to block ends set to before the start of the block.
+
+	</td>
+<td width="20%">      bzip2 @ 1.0.6-7</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-3189">         https://security-tracker.debian.org/tracker/CVE-2016-3189</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#666666">CVE-2012-5373</font></td>
+<td width="45%">
+	
+	
+
+
+	Oracle Java SE 7 and earlier, and OpenJDK 7 and earlier, computes hash values
+	without properly restricting the ability to trigger hash collisions predictably,
+	which allows context-dependent attackers to cause a denial of service (CPU
+	consumption) via crafted input to an application that maintains a hash table,
+	as demonstrated by a universal multicollision attack against the MurmurHash3
+	algorithm, a different vulnerability than CVE-2012-2739.
+
+	</td>
+<td width="20%">      openjdk-7 @ 7u121-2.6.8-2~deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2012-5373">         https://security-tracker.debian.org/tracker/CVE-2012-5373</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#666666">CVE-2017-5969</font></td>
+<td width="45%">
+	
+	
+
+
+	** DISPUTED ** libxml2 2.9.4, when used in recover mode, allows remote attackers
+	to cause a denial of service (NULL pointer dereference) via a crafted XML
+	document.  NOTE: The maintainer states "I would disagree of a CVE with the
+	Recover parsing option which should only be used for manual recovery at least
+	for XML parser."
+
+	</td>
+<td width="20%">      libxml2 @ 2.9.1+dfsg1-5+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-5969">         https://security-tracker.debian.org/tracker/CVE-2017-5969</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#666666">CVE-2016-7098</font></td>
+<td width="45%">
+	
+	
+
+
+	Race condition in wget 1.17 and earlier, when used in recursive or mirroring
+	mode to download a single file, might allow remote servers to bypass intended
+	access list restrictions by keeping an HTTP connection open.
+
+	</td>
+<td width="20%">      wget @ 1.16-1+deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-7098">         https://security-tracker.debian.org/tracker/CVE-2016-7098</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#666666">CVE-2016-2781</font></td>
+<td width="45%">
+	
+	
+
+
+	chroot in GNU coreutils, when used with --userspec, allows local users to escape
+	to the parent session via a crafted TIOCSTI ioctl call, which pushes characters
+	to the terminal's input buffer.
+
+	</td>
+<td width="20%">      coreutils @ 8.23-4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-2781">         https://security-tracker.debian.org/tracker/CVE-2016-2781</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#666666">CVE-2014-9913</font></td>
+<td width="45%">
+	
+	
+
+
+	Buffer overflow in the list_files function in list.c in Info-Zip UnZip 6.0
+	allows remote attackers to cause a denial of service (crash) via vectors related
+	to the compression method.
+
+	</td>
+<td width="20%">      unzip @ 6.0-16+deb8u2</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2014-9913">         https://security-tracker.debian.org/tracker/CVE-2014-9913</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#666666">CVE-2016-3119</font></td>
+<td width="45%">
+	
+	
+
+
+	The process_db_args function in plugins/kdb/ldap/libkdb_ldap/ldap_principal2.c
+	in the LDAP KDB module in kadmind in MIT Kerberos 5 (aka krb5) through 1.13.4
+	and 1.14.x through 1.14.1 mishandles the DB argument, which allows remote
+	authenticated users to cause a denial of service (NULL pointer dereference and
+	daemon crash) via a crafted request to modify a principal.
+
+	</td>
+<td width="20%">      krb5 @ 1.12.1+dfsg-19+deb8u2</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-3119">         https://security-tracker.debian.org/tracker/CVE-2016-3119</a></td>
+</tr>
+</table>
+</div>
+<div id = "tabs-5">
+<table>
+<tr>
+<th>ID</th>
+<th>Description</th>
+<th>Package</th>
+<th>Link</th>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2017-3544</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      openjdk-7 @ 7u121-2.6.8-2~deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-3544">         https://security-tracker.debian.org/tracker/CVE-2017-3544</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2004-0971</font></td>
+<td width="45%">
+	
+	
+
+
+	The krb5-send-pr script in the kerberos5 (krb5) package in Trustix Secure Linux
+	1.5 through 2.1, and possibly other operating systems, allows local users to
+	overwrite files via a symlink attack on temporary files.
+
+	</td>
+<td width="20%">      krb5 @ 1.12.1+dfsg-19+deb8u2</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2004-0971">         https://security-tracker.debian.org/tracker/CVE-2004-0971</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2013-4235</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      shadow @ 1:4.2-3+deb8u3</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2013-4235">         https://security-tracker.debian.org/tracker/CVE-2013-4235</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2011-3374</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      apt @ 1.0.9.8.4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2011-3374">         https://security-tracker.debian.org/tracker/CVE-2011-3374</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2007-5686</font></td>
+<td width="45%">
+	
+	
+
+
+	initscripts in rPath Linux 1 sets insecure permissions for the /var/log/btmp
+	file, which allows local users to obtain sensitive information regarding
+	authentication attempts.  NOTE: because sshd detects the insecure permissions
+	and does not log certain events, this also prevents sshd from logging failed
+	authentication attempts by remote attackers.
+
+	</td>
+<td width="20%">      shadow @ 1:4.2-3+deb8u3</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2007-5686">         https://security-tracker.debian.org/tracker/CVE-2007-5686</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2005-2541</font></td>
+<td width="45%">
+	
+	
+
+
+	Tar 1.15.1 does not properly warn the user when extracting setuid or setgid
+	files, which may allow local users or remote attackers to gain privileges.
+
+	</td>
+<td width="20%">      tar @ 1.27.1-2+deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2005-2541">         https://security-tracker.debian.org/tracker/CVE-2005-2541</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2010-4052</font></td>
+<td width="45%">
+	
+	
+
+
+	Stack consumption vulnerability in the regcomp implementation in the GNU C
+	Library (aka glibc or libc6) through 2.11.3, and 2.12.x through 2.12.2, allows
+	context-dependent attackers to cause a denial of service (resource exhaustion)
+	via a regular expression containing adjacent repetition operators, as
+	demonstrated by a {10,}{10,}{10,}{10,} sequence in the proftpd.gnu.c exploit for
+	ProFTPD.
+
+	</td>
+<td width="20%">      glibc @ 2.19-18+deb8u7</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2010-4052">         https://security-tracker.debian.org/tracker/CVE-2010-4052</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2017-7245</font></td>
+<td width="45%">
+	
+	
+
+
+	Stack-based buffer overflow in the pcre32_copy_substring function in pcre_get.c
+	in libpcre1 in PCRE 8.40 allows remote attackers to cause a denial of service
+	(WRITE of size 4) or possibly have unspecified other impact via a crafted file.
+
+	</td>
+<td width="20%">      pcre3 @ 2:8.35-3.3+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-7245">         https://security-tracker.debian.org/tracker/CVE-2017-7245</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2017-3533</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      openjdk-7 @ 7u121-2.6.8-2~deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-3533">         https://security-tracker.debian.org/tracker/CVE-2017-3533</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2012-0039</font></td>
+<td width="45%">
+	
+	
+
+
+	** DISPUTED ** GLib 2.31.8 and earlier, when the g_str_hash function is used,
+	computes hash values without restricting the ability to trigger hash collisions
+	predictably, which allows context-dependent attackers to cause a denial of
+	service (CPU consumption) via crafted input to an application that maintains a
+	hash table.  NOTE: this issue may be disputed by the vendor; the existence of
+	the g_str_hash function is not a vulnerability in the library, because callers
+	of g_hash_table_new and g_hash_table_new_full can specify an arbitrary hash
+	function that is appropriate for the application.
+
+	</td>
+<td width="20%">      glib2.0 @ 2.42.1-1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2012-0039">         https://security-tracker.debian.org/tracker/CVE-2012-0039</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2013-4392</font></td>
+<td width="45%">
+	
+	
+
+
+	systemd, when updating file permissions, allows local users to change the
+	permissions and SELinux security contexts for arbitrary files via a symlink
+	attack on unspecified files.
+
+	</td>
+<td width="20%">      systemd @ 215-17+deb8u6</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2013-4392">         https://security-tracker.debian.org/tracker/CVE-2013-4392</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2015-8985</font></td>
+<td width="45%">
+	
+	
+
+
+	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows
+	context-dependent attackers to cause a denial of service (assertion failure
+	and application crash) via vectors related to extended regular expression
+	processing.
+
+	</td>
+<td width="20%">      glibc @ 2.19-18+deb8u7</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2015-8985">         https://security-tracker.debian.org/tracker/CVE-2015-8985</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2007-6755</font></td>
+<td width="45%">
+	
+	
+
+
+	The NIST SP 800-90A default statement of the Dual Elliptic Curve Deterministic
+	Random Bit Generation (Dual_EC_DRBG) algorithm contains point Q constants with
+	a possible relationship to certain "skeleton key" values, which might allow
+	context-dependent attackers to defeat cryptographic protection mechanisms by
+	leveraging knowledge of those values.  NOTE: this is a preliminary CVE for
+	Dual_EC_DRBG; future research may provide additional details about point Q and
+	associated attacks, and could potentially lead to a RECAST or REJECT of this
+	CVE.
+
+	</td>
+<td width="20%">      openssl @ 1.1.0e-1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2007-6755">         https://security-tracker.debian.org/tracker/CVE-2007-6755</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2016-9063</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      expat @ 2.1.0-6+deb8u3</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-9063">         https://security-tracker.debian.org/tracker/CVE-2016-9063</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2012-3878</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      perl @ 5.20.2-3+deb8u6</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2012-3878">         https://security-tracker.debian.org/tracker/CVE-2012-3878</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2013-0340</font></td>
+<td width="45%">
+	
+	
+
+
+	expat 2.1.0 and earlier does not properly handle entities expansion unless an
+	application developer uses the XML_SetEntityDeclHandler function, which allows
+	remote attackers to cause a denial of service (resource consumption), send
+	HTTP requests to intranet servers, or read arbitrary files via a crafted XML
+	document, aka an XML External Entity (XXE) issue.  NOTE: it could be argued that
+	because expat already provides the ability to disable external entity expansion,
+	the responsibility for resolving this issue lies with application developers;
+	according to this argument, this entry should be REJECTed, and each affected
+	application would need its own CVE.
+
+	</td>
+<td width="20%">      expat @ 2.1.0-6+deb8u3</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2013-0340">         https://security-tracker.debian.org/tracker/CVE-2013-0340</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2011-4116</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      perl @ 5.20.2-3+deb8u6</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2011-4116">         https://security-tracker.debian.org/tracker/CVE-2011-4116</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2017-2616</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      util-linux @ 2.25.2-6</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-2616">         https://security-tracker.debian.org/tracker/CVE-2017-2616</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2010-4756</font></td>
+<td width="45%">
+	
+	
+
+
+	The glob implementation in the GNU C Library (aka glibc or libc6) allows remote
+	authenticated users to cause a denial of service (CPU and memory consumption)
+	via crafted glob expressions that do not match any pathnames, as demonstrated
+	by glob expressions in STAT commands to an FTP daemon, a different vulnerability
+	than CVE-2010-2632.
+
+	</td>
+<td width="20%">      glibc @ 2.19-18+deb8u7</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2010-4756">         https://security-tracker.debian.org/tracker/CVE-2010-4756</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2016-3739</font></td>
+<td width="45%">
+	
+	
+
+
+	The (1) mbed_connect_step1 function in lib/vtls/mbedtls.c and (2)
+	polarssl_connect_step1 function in lib/vtls/polarssl.c in cURL and libcurl
+	before 7.49.0, when using SSLv3 or making a TLS connection to a URL that uses a
+	numerical IP address, allow remote attackers to spoof servers via an arbitrary
+	valid certificate.
+
+	</td>
+<td width="20%">      curl @ 7.38.0-4+deb8u5</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-3739">         https://security-tracker.debian.org/tracker/CVE-2016-3739</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2010-4051</font></td>
+<td width="45%">
+	
+	
+
+
+	The regcomp implementation in the GNU C Library (aka glibc or libc6) through
+	2.11.3, and 2.12.x through 2.12.2, allows context-dependent attackers to cause
+	a denial of service (application crash) via a regular expression containing
+	adjacent bounded repetitions that bypass the intended RE_DUP_MAX limitation,
+	as demonstrated by a {10,}{10,}{10,}{10,}{10,} sequence in the proftpd.gnu.c
+	exploit for ProFTPD, related to a "RE_DUP_MAX overflow."
+
+	</td>
+<td width="20%">      glibc @ 2.19-18+deb8u7</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2010-4051">         https://security-tracker.debian.org/tracker/CVE-2010-4051</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2017-3526</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      openjdk-7 @ 7u121-2.6.8-2~deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-3526">         https://security-tracker.debian.org/tracker/CVE-2017-3526</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2017-3509</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      openjdk-7 @ 7u121-2.6.8-2~deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-3509">         https://security-tracker.debian.org/tracker/CVE-2017-3509</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2015-3276</font></td>
+<td width="45%">
+	
+	
+
+
+	The nss_parse_ciphers function in libraries/libldap/tls_m.c in OpenLDAP does
+	not properly parse OpenSSL-style multi-keyword mode cipher strings, which might
+	cause a weaker than intended cipher to be used and allow remote attackers to
+	have unspecified impact via unknown vectors.
+
+	</td>
+<td width="20%">      openldap @ 2.4.40+dfsg-1+deb8u2</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2015-3276">         https://security-tracker.debian.org/tracker/CVE-2015-3276</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2007-6755</font></td>
+<td width="45%">
+	
+	
+
+
+	The NIST SP 800-90A default statement of the Dual Elliptic Curve Deterministic
+	Random Bit Generation (Dual_EC_DRBG) algorithm contains point Q constants with
+	a possible relationship to certain "skeleton key" values, which might allow
+	context-dependent attackers to defeat cryptographic protection mechanisms by
+	leveraging knowledge of those values.  NOTE: this is a preliminary CVE for
+	Dual_EC_DRBG; future research may provide additional details about point Q and
+	associated attacks, and could potentially lead to a RECAST or REJECT of this
+	CVE.
+
+	</td>
+<td width="20%">      openssl @ 1.0.1t-1+deb8u6</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2007-6755">         https://security-tracker.debian.org/tracker/CVE-2007-6755</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2014-8166</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      cups @ 1.7.5-11+deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2014-8166">         https://security-tracker.debian.org/tracker/CVE-2014-8166</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2015-5186</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      audit @ 1:2.4-1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2015-5186">         https://security-tracker.debian.org/tracker/CVE-2015-5186</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2015-5224</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      util-linux @ 2.25.2-6</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2015-5224">         https://security-tracker.debian.org/tracker/CVE-2015-5224</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2017-3511</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      openjdk-7 @ 7u121-2.6.8-2~deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-3511">         https://security-tracker.debian.org/tracker/CVE-2017-3511</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2016-4484</font></td>
+<td width="45%">
+	
+	
+
+
+	The Debian initrd script for the cryptsetup package 2:1.7.3-2 and earlier allows
+	physically proximate attackers to gain shell access via many log in attempts
+	with an invalid password.
+
+	</td>
+<td width="20%">      cryptsetup @ 2:1.6.6-5</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2016-4484">         https://security-tracker.debian.org/tracker/CVE-2016-4484</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2017-3539</font></td>
+<td width="45%">
+	
+	
+
+
+	</td>
+<td width="20%">      openjdk-7 @ 7u121-2.6.8-2~deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-3539">         https://security-tracker.debian.org/tracker/CVE-2017-3539</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2017-7246</font></td>
+<td width="45%">
+	
+	
+
+
+	Stack-based buffer overflow in the pcre32_copy_substring function in pcre_get.c
+	in libpcre1 in PCRE 8.40 allows remote attackers to cause a denial of service
+	(WRITE of size 268) or possibly have unspecified other impact via a crafted
+	file.
+
+	</td>
+<td width="20%">      pcre3 @ 2:8.35-3.3+deb8u4</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2017-7246">         https://security-tracker.debian.org/tracker/CVE-2017-7246</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2012-2739</font></td>
+<td width="45%">
+	
+	
+
+
+	Oracle Java SE before 7 Update 6, and OpenJDK 7 before 7u6 build 12 and 8 before
+	build 39, computes hash values without restricting the ability to trigger hash
+	collisions predictably, which allows context-dependent attackers to cause a
+	denial of service (CPU consumption) via crafted input to an application that
+	maintains a hash table.
+
+	</td>
+<td width="20%">      openjdk-7 @ 7u121-2.6.8-2~deb8u1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2012-2739">         https://security-tracker.debian.org/tracker/CVE-2012-2739</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2015-5218</font></td>
+<td width="45%">
+	
+	
+
+
+	Buffer overflow in text-utils/colcrt.c in colcrt in util-linux before 2.27
+	allows local users to cause a denial of service (crash) via a crafted file,
+	related to the page global variable.
+
+	</td>
+<td width="20%">      util-linux @ 2.25.2-6</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2015-5218">         https://security-tracker.debian.org/tracker/CVE-2015-5218</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2010-0928</font></td>
+<td width="45%">
+	
+	
+
+
+	OpenSSL 0.9.8i on the Gaisler Research LEON3 SoC on the Xilinx Virtex-II Pro
+	FPGA uses a Fixed Width Exponentiation (FWE) algorithm for certain signature
+	calculations, and does not verify the signature before providing it to a caller,
+	which makes it easier for physically proximate attackers to determine the
+	private key via a modified supply voltage for the microprocessor, related to a
+	"fault-based attack."
+
+	</td>
+<td width="20%">      openssl @ 1.0.1t-1+deb8u6</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2010-0928">         https://security-tracker.debian.org/tracker/CVE-2010-0928</a></td>
+</tr>
+<tr>
+<td width="10%"><font color="#000000">CVE-2010-0928</font></td>
+<td width="45%">
+	
+	
+
+
+	OpenSSL 0.9.8i on the Gaisler Research LEON3 SoC on the Xilinx Virtex-II Pro
+	FPGA uses a Fixed Width Exponentiation (FWE) algorithm for certain signature
+	calculations, and does not verify the signature before providing it to a caller,
+	which makes it easier for physically proximate attackers to determine the
+	private key via a modified supply voltage for the microprocessor, related to a
+	"fault-based attack."
+
+	</td>
+<td width="20%">      openssl @ 1.1.0e-1</td>
+<td><a href="         https://security-tracker.debian.org/tracker/CVE-2010-0928">         https://security-tracker.debian.org/tracker/CVE-2010-0928</a></td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+$('div.high-count').text('10');
+$('div.med-count').text('20');
+$('div.low-count').text('11');
+$('div.neg-count').text('36');
+</script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load("current", {packages:["corechart"]});google.charts.setOnLoadCallback(drawChart);function drawChart() {
+var data = google.visualization.arrayToDataTable([['Type', 'Vulnarability'],['High', 10],['Medium',20],['Low',11], ['Negligible', 36]]);
+var options = { legend: 'right', title: 'Severity Graph', titleTextStyle :{color:'#33AFFF',fontName:'Helvetica',fontSize:14}, pieHole: 0.4,};
+  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+chart.draw(data, options); }
+  </script>
+</html>
+
+

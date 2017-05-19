@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: clair-docker-scanner_latest
+Long-Name: Clair Scanner Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-04/21/2017 13:11-514740)
+Hudson-Version: 1.625.3
+Jenkins-Version: 1.625.3
+Plugin-Developers: 
+Libraries: D:\Documents\Plugin_and _Utility\Jenkins_Plugin\Clair_Plugi
+ n\clair-docker-scanner_latest\src\main\resources,D:\Documents\Plugin_
+ and _Utility\Jenkins_Plugin\Clair_Plugin\clair-docker-scanner_latest\
+ target\classes
+Resource-Path: D:\Documents\Plugin_and _Utility\Jenkins_Plugin\Clair_P
+ lugin\clair-docker-scanner_latest\src\main\webapp
+

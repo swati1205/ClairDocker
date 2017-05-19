@@ -1,0 +1,1632 @@
+Clair report for image jenkins (2017-05-10 06:10:10.612262806 +0000 UTC)
+CVE-2016-7950 (High)
+	The XRenderQueryFilters function in X.org libXrender before 0.9.10 allows remote
+	X servers to trigger out-of-bounds write operations via vectors involving filter
+	name lengths.
+
+	Package:       libxrender @ 1:0.9.8-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7950
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-7949 (High)
+	Multiple buffer overflows in the (1) XvQueryAdaptors and (2) XvQueryEncodings
+	functions in X.org libXrender before 0.9.10 allow remote X servers to trigger
+	out-of-bounds write operations via vectors involving length fields.
+
+	Package:       libxrender @ 1:0.9.8-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7949
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-5225 (High)
+	LibTIFF version 4.0.7 is vulnerable to a heap buffer overflow in the
+	tools/tiffcp resulting in DoS or code execution via a crafted BitsPerSample
+	value.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5225
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-7947 (High)
+	Multiple integer overflows in X.org libXrandr before 1.5.1 allow remote X
+	servers to trigger out-of-bounds write operations via a crafted response.
+
+	Package:       libxrandr @ 2:1.4.2-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7947
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-7948 (High)
+	X.org libXrandr before 1.5.1 allows remote X servers to trigger out-of-bounds
+	write operations by leveraging mishandling of reply data.
+
+	Package:       libxrandr @ 2:1.4.2-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7948
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-7167 (High)
+	Multiple integer overflows in the (1) curl_escape, (2) curl_easy_escape, (3)
+	curl_unescape, and (4) curl_easy_unescape functions in libcurl before 7.50.3
+	allow attackers to have unspecified impact via a string of length 0xffffffff,
+	which triggers a heap-based buffer overflow.
+
+	Package:       curl @ 7.38.0-4+deb8u5
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7167
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2016-7944 (High)
+	Integer overflow in X.org libXfixes before 5.0.3 on 32-bit platforms might
+	allow remote X servers to gain privileges via a length value of INT_MAX, which
+	triggers the client to stop reading data and get out of sync.
+
+	Package:       libxfixes @ 1:5.0.1-2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7944
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-5334 (High)
+	Double free vulnerability in the gnutls_x509_ext_import_proxy function in GnuTLS
+	before 3.3.26 and 3.5.x before 3.5.8 allows remote attackers to have unspecified
+	impact via crafted policy language information in an X.509 certificate with a
+	Proxy Certificate Information extension.
+
+	Package:       gnutls28 @ 3.3.8-6+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5334
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2014-9761 (High)
+	Multiple stack-based buffer overflows in the GNU C Library (aka glibc or libc6)
+	before 2.23 allow context-dependent attackers to cause a denial of service
+	(application crash) or possibly execute arbitrary code via a long argument to
+	the (1) nan, (2) nanf, or (3) nanl function.
+
+	Package:       glibc @ 2.19-18+deb8u7
+	Link:          https://security-tracker.debian.org/tracker/CVE-2014-9761
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2016-9535 (High)
+	tif_predict.h and tif_predict.c in libtiff 4.0.6 have assertions that can lead
+	to assertion failures in debug mode, or buffer overflows in release mode, when
+	dealing with unusual tile size like YCbCr with subsampling. Reported as MSVR
+	35105, aka "Predictor heap-buffer-overflow."
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9535
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2015-8947 (High)
+	hb-ot-layout-gpos-table.hh in HarfBuzz before 1.0.5 allows remote attackers to
+	cause a denial of service (buffer over-read) or possibly have unspecified other
+	impact via crafted data, a different vulnerability than CVE-2016-2052.
+
+	Package:       harfbuzz @ 0.9.35-2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-8947
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-7942 (High)
+	The XGetImage function in X.org libX11 before 1.6.4 might allow remote X servers
+	to gain privileges via vectors involving image type and geometry, which triggers
+	out-of-bounds read operations.
+
+	Package:       libx11 @ 2:1.6.2-3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7942
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-4448 (High)
+	Format string vulnerability in libxml2 before 2.9.4 allows attackers to have
+	unspecified impact via format string specifiers in unknown vectors.
+
+	Package:       libxml2 @ 2.9.1+dfsg1-5+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-4448
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-5336 (High)
+	Stack-based buffer overflow in the cdk_pk_get_keyid function in
+	lib/opencdk/pubkey.c in GnuTLS before 3.3.26 and 3.5.x before 3.5.8 allows
+	remote attackers to have unspecified impact via a crafted OpenPGP certificate.
+
+	Package:       gnutls28 @ 3.3.8-6+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5336
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2017-5337 (High)
+	Multiple heap-based buffer overflows in the read_attribute function in GnuTLS
+	before 3.3.26 and 3.5.x before 3.5.8 allow remote attackers to have unspecified
+	impact via a crafted OpenPGP certificate.
+
+	Package:       gnutls28 @ 3.3.8-6+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5337
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2016-2090 (High)
+	Off-by-one vulnerability in the fgetwln function in libbsd before 0.8.2 allows
+	attackers to have unspecified impact via unknown vectors, which trigger a
+	heap-based buffer overflow.
+
+	Package:       libbsd @ 0.7.0-2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-2090
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-7943 (High)
+	The XListFonts function in X.org libX11 before 1.6.4 might allow remote X
+	servers to gain privileges via vectors involving length fields, which trigger
+	out-of-bounds write operations.
+
+	Package:       libx11 @ 2:1.6.2-3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7943
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-6515 (High)
+	The auth_password function in auth-passwd.c in sshd in OpenSSH before 7.3 does
+	not limit password lengths for password authentication, which allows remote
+	attackers to cause a denial of service (crypt CPU consumption) via a long
+	string.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-6515
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-7951 (High)
+	Multiple integer overflows in X.org libXtst before 1.2.3 allow remote X servers
+	to trigger out-of-bounds memory access operations by leveraging the lack of
+	range checks.
+
+	Package:       libxtst @ 2:1.2.2-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7951
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-1908 (High)
+	The client in OpenSSH before 7.2 mishandles failed cookie generation for
+	untrusted X11 forwarding and relies on the local X11 server for access-control
+	decisions, which allows remote X11 clients to trigger a fallback and obtain
+	trusted X11 forwarding privileges by leveraging configuration issues on this X11
+	server, as demonstrated by lack of the SECURITY extension on this X11 server.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-1908
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-2779 (High)
+	runuser in util-linux allows local users to escape to the parent session via
+	a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input
+	buffer.
+
+	Package:       util-linux @ 2.25.2-6
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-2779
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2015-5600 (High)
+	The kbdint_next_device function in auth2-chall.c in sshd in OpenSSH through 6.9
+	does not properly restrict the processing of keyboard-interactive devices within
+	a single connection, which makes it easier for remote attackers to conduct
+	brute-force attacks or cause a denial of service (CPU consumption) via a long
+	and duplicative list in the ssh -oKbdInteractiveDevices option, as demonstrated
+	by a modified client that provides a different password for each pam element on
+	this list.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-5600
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-8858 (High)
+	** DISPUTED ** The kex_input_kexinit function in kex.c in OpenSSH 6.x and
+	7.x through 7.3 allows remote attackers to cause a denial of service (memory
+	consumption) by sending many duplicate KEXINIT requests.  NOTE: a third party
+	reports that "OpenSSH upstream does not consider this as a security issue."
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-8858
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2015-8271 (High)
+	The AMF3CD_AddProp function in amf.c in RTMPDump 2.4 allows remote RTMP Media
+	servers to execute arbitrary code.
+
+	Package:       rtmpdump @ 2.4+20150115.gita107cef-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-8271
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2015-7554 (High)
+	The _TIFFVGetField function in tif_dir.c in libtiff 4.0.6 allows attackers to
+	cause a denial of service (invalid memory write and crash) or possibly have
+	unspecified other impact via crafted field data in an extension tag in a TIFF
+	image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-7554
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7741 (Medium)
+	In libsndfile before 1.0.28, an error in the "flac_buffer_copy()" function
+	(flac.c) can be exploited to cause a segmentation violation (with write memory
+	access) via a specially crafted FLAC file during a resample attempt, a similar
+	issue to CVE-2017-7585.
+
+	Package:       libsndfile @ 1.0.25-9.1+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7741
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7586 (Medium)
+	In libsndfile before 1.0.28, an error in the "header_read()" function (common.c)
+	when handling ID3 tags can be exploited to cause a stack-based buffer overflow
+	via a specially crafted FLAC file.
+
+	Package:       libsndfile @ 1.0.25-9.1+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7586
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7742 (Medium)
+	In libsndfile before 1.0.28, an error in the "flac_buffer_copy()" function
+	(flac.c) can be exploited to cause a segmentation violation (with read memory
+	access) via a specially crafted FLAC file during a resample attempt, a similar
+	issue to CVE-2017-7585.
+
+	Package:       libsndfile @ 1.0.25-9.1+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7742
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-3120 (Medium)
+	The validate_as_request function in kdc_util.c in the Key Distribution Center
+	(KDC) in MIT Kerberos 5 (aka krb5) before 1.13.6 and 1.4.x before 1.14.3, when
+	restrict_anonymous_to_tgt is enabled, uses an incorrect client data structure,
+	which allows remote authenticated users to cause a denial of service (NULL
+	pointer dereference and daemon crash) via an S4U2Self request.
+
+	Package:       krb5 @ 1.12.1+dfsg-19+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-3120
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2017-7585 (Medium)
+	In libsndfile before 1.0.28, an error in the "flac_buffer_copy()" function
+	(flac.c) can be exploited to cause a stack-based buffer overflow via a specially
+	crafted FLAC file.
+
+	Package:       libsndfile @ 1.0.25-9.1+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7585
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7592 (Medium)
+	The putagreytile function in tif_getimage.c in LibTIFF 4.0.7 has a left-shift
+	undefined behavior issue, which might allow remote attackers to cause a denial
+	of service (application crash) or possibly have unspecified other impact via a
+	crafted image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7592
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7613 (Medium)
+	elflint.c in elfutils 0.168 does not validate the number of sections and the
+	number of segments, which allows remote attackers to cause a denial of service
+	(memory consumption) via a crafted ELF file.
+
+	Package:       elfutils @ 0.159-4.2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7613
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2010-2596 (Medium)
+	The OJPEGPostDecode function in tif_ojpeg.c in LibTIFF 3.9.0 and 3.9.2, as used
+	in tiff2ps, allows remote attackers to cause a denial of service (assertion
+	failure and application exit) via a crafted TIFF image, related to "downsampled
+	OJPEG input."
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2010-2596
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-6352 (Medium)
+	The OneLine32 function in io-ico.c in gdk-pixbuf before 2.35.3 allows remote
+	attackers to cause a denial of service (out-of-bounds write and crash) via
+	crafted dimensions in an ICO file.
+
+	Package:       gdk-pixbuf @ 2.31.1-2+deb8u5
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-6352
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-10249 (Medium)
+	Integer overflow in the jpc_dec_tiledecode function in jpc_dec.c in JasPer
+	before 1.900.12 allows remote attackers to have unspecified impact via a crafted
+	image file, which triggers a heap-based buffer overflow.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Fixed version: 1.900.1-debian1-2.4+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10249
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-3115 (Medium)
+	Multiple CRLF injection vulnerabilities in session.c in sshd in OpenSSH
+	before 7.2p2 allow remote authenticated users to bypass intended
+	shell-command restrictions via crafted X11 forwarding data, related to the (1)
+	do_authenticated1 and (2) session_x11_req functions.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-3115
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2017-7610 (Medium)
+	The check_group function in elflint.c in elfutils 0.168 allows remote attackers
+	to cause a denial of service (heap-based buffer over-read and application crash)
+	via a crafted ELF file.
+
+	Package:       elfutils @ 0.159-4.2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7610
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-10251 (Medium)
+	Integer overflow in the jpc_pi_nextcprl function in jpc_t2cod.c in JasPer before
+	1.900.20 allows remote attackers to have unspecified impact via a crafted file,
+	which triggers use of an uninitialized value.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Fixed version: 1.900.1-debian1-2.4+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10251
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-7946 (Medium)
+	X.org libXi before 1.7.7 allows remote X servers to cause a denial of service
+	(infinite loop) via vectors involving length fields.
+
+	Package:       libxi @ 2:1.7.4-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7946
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7597 (Medium)
+	tif_dirread.c in LibTIFF 4.0.7 has an "outside the range of representable values
+	of type float" undefined behavior issue, which might allow remote attackers to
+	cause a denial of service (application crash) or possibly have unspecified other
+	impact via a crafted image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7597
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-9318 (Medium)
+	libxml2 2.9.4 and earlier, as used in XMLSec 1.2.23 and earlier and other
+	products, does not offer a flag directly indicating that the current document
+	may be read but other files may not be opened, which makes it easier for remote
+	attackers to conduct XML External Entity (XXE) attacks via a crafted document.
+
+	Package:       libxml2 @ 2.9.1+dfsg1-5+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9318
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2015-6564 (Medium)
+	Use-after-free vulnerability in the mm_answer_pam_free_ctx function in monitor.c
+	in sshd in OpenSSH before 7.0 on non-OpenBSD platforms might allow local users
+	to gain privileges by leveraging control of the sshd uid to send an unexpectedly
+	early MONITOR_REQ_PAM_FREE_CTX request.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-6564
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2017-7596 (Medium)
+	LibTIFF 4.0.7 has an "outside the range of representable values of type float"
+	undefined behavior issue, which might allow remote attackers to cause a denial
+	of service (application crash) or possibly have unspecified other impact via a
+	crafted image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7596
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7608 (Medium)
+	The ebl_object_note_type_name function in eblobjnotetypename.c in elfutils
+	0.168 allows remote attackers to cause a denial of service (heap-based buffer
+	over-read and application crash) via a crafted ELF file.
+
+	Package:       elfutils @ 0.159-4.2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7608
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-6508 (Medium)
+	CRLF injection vulnerability in the url_parse function in url.c in Wget through
+	1.19.1 allows remote attackers to inject arbitrary HTTP headers via CRLF
+	sequences in the host subcomponent of a URL.
+
+	Package:       wget @ 1.16-1+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-6508
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2017-7607 (Medium)
+	The handle_gnu_hash function in readelf.c in elfutils 0.168 allows remote
+	attackers to cause a denial of service (heap-based buffer over-read and
+	application crash) via a crafted ELF file.
+
+	Package:       elfutils @ 0.159-4.2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7607
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7593 (Medium)
+	tif_read.c in LibTIFF 4.0.7 does not ensure that tif_rawdata is properly
+	initialized, which might allow remote attackers to obtain sensitive information
+	from process memory via a crafted image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7593
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7868 (Medium)
+	International Components for Unicode (ICU) for C/C++ before 2017-02-13 has
+	an out-of-bounds write caused by a heap-based buffer overflow related to the
+	utf8TextAccess function in common/utext.cpp and the utext_moveIndex32* function.
+
+	Package:       icu @ 52.1-8+deb8u4
+	Fixed version: 52.1-8+deb8u5
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7868
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2016-10267 (Medium)
+	LibTIFF 4.0.7 allows remote attackers to cause a denial of service
+	(divide-by-zero error and application crash) via a crafted TIFF image, related
+	to libtiff/tif_ojpeg.c:816:8.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10267
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-7945 (Medium)
+	Multiple integer overflows in X.org libXi before 1.7.7 allow remote X servers
+	to cause a denial of service (out-of-bounds memory access or infinite loop) via
+	vectors involving length fields.
+
+	Package:       libxi @ 2:1.7.4-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7945
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-7952 (Medium)
+	X.org libXtst before 1.2.3 allows remote X servers to cause a denial of service
+	(infinite loop) via a reply in the (1) XRecordStartOfData, (2) XRecordEndOfData,
+	or (3) XRecordClientDied category without a client sequence and with attached
+	data.
+
+	Package:       libxtst @ 2:1.2.2-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7952
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7867 (Medium)
+	International Components for Unicode (ICU) for C/C++ before 2017-02-13 has
+	an out-of-bounds write caused by a heap-based buffer overflow related to the
+	utf8TextAccess function in common/utext.cpp and the utext_setNativeIndex*
+	function.
+
+	Package:       icu @ 52.1-8+deb8u4
+	Fixed version: 52.1-8+deb8u5
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7867
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2017-7598 (Medium)
+	tif_dirread.c in LibTIFF 4.0.7 might allow remote attackers to cause a denial of
+	service (divide-by-zero error and application crash) via a crafted image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7598
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-6313 (Medium)
+	Integer underflow in the load_resources function in io-icns.c in gdk-pixbuf
+	allows context-dependent attackers to cause a denial of service (out-of-bounds
+	read and program crash) via a crafted image entry size in an ICO file.
+
+	Package:       gdk-pixbuf @ 2.31.1-2+deb8u5
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-6313
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7594 (Medium)
+	The OJPEGReadHeaderInfoSecTablesDcTable function in tif_ojpeg.c in LibTIFF 4.0.7
+	allows remote attackers to cause a denial of service (memory leak) via a crafted
+	image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7594
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-5011 (Medium)
+	The parse_dos_extended function in partitions/dos.c in the libblkid library in
+	util-linux allows physically proximate attackers to cause a denial of service
+	(memory consumption) via a crafted MSDOS partition table with an extended
+	partition boot record at zero offset.
+
+	Package:       util-linux @ 2.25.2-6
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-5011
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2017-6314 (Medium)
+	The make_available_at_least function in io-tiff.c in gdk-pixbuf allows
+	context-dependent attackers to cause a denial of service (infinite loop) via a
+	large TIFF file.
+
+	Package:       gdk-pixbuf @ 2.31.1-2+deb8u5
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-6314
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-5318 (Medium)
+	Stack-based buffer overflow in the _TIFFVGetField function in libtiff 4.0.6 and
+	earlier allows remote attackers to crash the application via a crafted tiff.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-5318
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7611 (Medium)
+	The check_symtab_shndx function in elflint.c in elfutils 0.168 allows remote
+	attackers to cause a denial of service (heap-based buffer over-read and
+	application crash) via a crafted ELF file.
+
+	Package:       elfutils @ 0.159-4.2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7611
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7600 (Medium)
+	LibTIFF 4.0.7 has an "outside the range of representable values of type unsigned
+	char" undefined behavior issue, which might allow remote attackers to cause a
+	denial of service (application crash) or possibly have unspecified other impact
+	via a crafted image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7600
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-3616 (Medium)
+	The cjpeg utility in libjpeg allows remote attackers to cause a denial of
+	service (NULL pointer dereference and application crash) or execute arbitrary
+	code via a crafted file.
+
+	Package:       libjpeg-turbo @ 1:1.3.1-12
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-3616
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2015-3217 (Medium)
+	PCRE 7.8 and 8.32 through 8.37, and PCRE2 10.10 mishandle group empty matches,
+	which might allow remote attackers to cause a denial of service (stack-based
+	buffer overflow) via a crafted regular expression, as demonstrated by
+	/^(?:(?(1)\\.|([^\\\\W_])?)+)+$/.
+
+	Package:       pcre3 @ 2:8.35-3.3+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-3217
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2015-7313 (Medium)
+	LibTIFF allows remote attackers to cause a denial of service (memory consumption
+	and crash) via a crafted tiff file.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-7313
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7186 (Medium)
+	libpcre1 in PCRE 8.40 and libpcre2 in PCRE2 10.23 allow remote attackers
+	to cause a denial of service (segmentation violation for read access, and
+	application crash) by triggering an invalid Unicode property lookup.
+
+	Package:       pcre3 @ 2:8.35-3.3+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7186
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2017-7612 (Medium)
+	The check_sysv_hash function in elflint.c in elfutils 0.168 allows remote
+	attackers to cause a denial of service (heap-based buffer over-read and
+	application crash) via a crafted ELF file.
+
+	Package:       elfutils @ 0.159-4.2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7612
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-6312 (Medium)
+	Integer overflow in io-ico.c in gdk-pixbuf allows context-dependent attackers
+	to cause a denial of service (segmentation fault and application crash) via a
+	crafted image entry offset in an ICO file, which triggers an out-of-bounds read,
+	related to compiler optimizations.
+
+	Package:       gdk-pixbuf @ 2.31.1-2+deb8u5
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-6312
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-10095 (Medium)
+	Stack-based buffer overflow in the _TIFFVGetField function in tif_dir.c in
+	LibTIFF 4.0.7 allows remote attackers to cause a denial of service (crash) via a
+	crafted TIFF file.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10095
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2015-5352 (Medium)
+	The x11_open_helper function in channels.c in ssh in OpenSSH before 6.9, when
+	ForwardX11Trusted mode is not used, lacks a check of the refusal deadline for
+	X connections, which makes it easier for remote attackers to bypass intended
+	access restrictions via a connection outside of the permitted time window.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-5352
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2015-8272 (Medium)
+	RTMPDump 2.4 allows remote attackers to trigger a denial of service (NULL
+	pointer dereference and process crash).
+
+	Package:       rtmpdump @ 2.4+20150115.gita107cef-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-8272
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2015-5276 (Medium)
+	The std::random_device class in libstdc++ in the GNU Compiler Collection (aka
+	GCC) before 4.9.4 does not properly handle short reads from blocking sources,
+	which makes it easier for context-dependent attackers to predict the random
+	values via unspecified vectors.
+
+	Package:       gcc-4.9 @ 4.9.2-10
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-5276
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2015-8270 (Medium)
+	The AMF3ReadString function in amf.c in RTMPDump 2.4 allows remote RTMP Media
+	servers to cause a denial of service (invalid pointer dereference and process
+	crash).
+
+	Package:       rtmpdump @ 2.4+20150115.gita107cef-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-8270
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2017-5501 (Medium)
+	Integer overflow in libjasper/jpc/jpc_tsfb.c in JasPer 1.900.17 allows remote
+	attackers to cause a denial of service (crash) via a crafted file.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5501
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-10228 (Medium)
+	The iconv program in the GNU C Library (aka glibc or libc6) 2.25 and earlier,
+	when invoked with the -c option, enters an infinite loop when processing invalid
+	multi-byte input sequences, leading to a denial of service.
+
+	Package:       glibc @ 2.19-18+deb8u7
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10228
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2017-5503 (Medium)
+	The dec_clnpass function in libjasper/jpc/jpc_t1dec.c in JasPer 1.900.27 allows
+	remote attackers to cause a denial of service (invalid memory write and crash)
+	or possibly have unspecified other impact via a crafted image.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5503
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-10270 (Medium)
+	LibTIFF 4.0.7 allows remote attackers to cause a denial of service (heap-based
+	buffer over-read) or possibly have unspecified other impact via a crafted TIFF
+	image, related to "READ of size 8" and libtiff/tif_read.c:523:22.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10270
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7599 (Medium)
+	LibTIFF 4.0.7 has an "outside the range of representable values of type short"
+	undefined behavior issue, which might allow remote attackers to cause a denial
+	of service (application crash) or possibly have unspecified other impact via a
+	crafted image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7599
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2015-2694 (Medium)
+	The kdcpreauth modules in MIT Kerberos 5 (aka krb5) 1.12.x and 1.13.x before
+	1.13.2 do not properly track whether a client's request has been validated,
+	which allows remote attackers to bypass an intended preauthentication
+	requirement by providing (1) zero bytes of data or (2) an arbitrary realm name,
+	related to plugins/preauth/otp/main.c and plugins/preauth/pkinit/pkinit_srv.c.
+
+	Package:       krb5 @ 1.12.1+dfsg-19+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-2694
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2016-9557 (Medium)
+	Integer overflow in jas_image.c in JasPer before 1.900.25 allows remote
+	attackers to cause a denial of service (application crash) via a crafted file.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9557
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-8883 (Medium)
+	The jpc_dec_tiledecode function in jpc_dec.c in JasPer before 1.900.8 allows
+	remote attackers to cause a denial of service (assertion failure) via a crafted
+	file.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-8883
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-6852 (Medium)
+	Heap-based buffer overflow in the jpc_dec_decodepkt function in jpc_t2dec.c in
+	JasPer 2.0.10 allows remote attackers to have unspecified impact via a crafted
+	image.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-6852
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7602 (Medium)
+	LibTIFF 4.0.7 has a signed integer overflow, which might allow remote attackers
+	to cause a denial of service (application crash) or possibly have unspecified
+	other impact via a crafted image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7602
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7595 (Medium)
+	The JPEGSetupEncode function in tiff_jpeg.c in LibTIFF 4.0.7 allows remote
+	attackers to cause a denial of service (divide-by-zero error and application
+	crash) via a crafted image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7595
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7601 (Medium)
+	LibTIFF 4.0.7 has a "shift exponent too large for 64-bit type long" undefined
+	behavior issue, which might allow remote attackers to cause a denial of service
+	(application crash) or possibly have unspecified other impact via a crafted
+	image.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7601
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2015-2305 (Medium)
+	Integer overflow in the regcomp implementation in the Henry Spencer BSD regex
+	library (aka rxspencer) alpha3.8.g5 on 32-bit platforms, as used in NetBSD
+	through 6.1.5 and other products, might allow context-dependent attackers to
+	execute arbitrary code via a large regular expression that leads to a heap-based
+	buffer overflow.
+
+	Package:       llvm-toolchain-3.5 @ 1:3.5-10
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-2305
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-10268 (Medium)
+	tools/tiffcp.c in LibTIFF 4.0.7 allows remote attackers to cause a denial of
+	service (integer underflow and heap-based buffer under-read) or possibly have
+	unspecified other impact via a crafted TIFF image, related to "READ of size
+	78490" and libtiff/tif_unix.c:115:23.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10268
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-3977 (Medium)
+	Heap-based buffer overflow in util/gif2rgb.c in gif2rgb in giflib 5.1.2 allows
+	remote attackers to cause a denial of service (application crash) via the
+	background color index in a GIF file.
+
+	Package:       giflib @ 4.1.6-11+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-3977
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-7141 (Medium)
+	curl and libcurl before 7.50.2, when built with NSS and the libnsspem.so library
+	is available at runtime, allow remote attackers to hijack the authentication of
+	a TLS connection by leveraging reuse of a previously loaded client certificate
+	from file for a connection for which no certificate has been set, a different
+	vulnerability than CVE-2016-5420.
+
+	Package:       curl @ 7.38.0-4+deb8u5
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7141
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2016-10244 (Medium)
+	The parse_charstrings function in type1/t1load.c in FreeType 2 before 2.7 does
+	not ensure that a font contains a glyph name, which allows remote attackers
+	to cause a denial of service (heap-based buffer over-read) or possibly have
+	unspecified other impact via a crafted file.
+
+	Package:       freetype @ 2.5.2-3+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10244
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-8887 (Medium)
+	The jp2_colr_destroy function in libjasper/jp2/jp2_cod.c in JasPer before
+	1.900.10 allows remote attackers to cause a denial of service (NULL pointer
+	dereference).
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-8887
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7869 (Medium)
+	GnuTLS before 2017-02-20 has an out-of-bounds write caused by an integer
+	overflow and heap-based buffer overflow related to the cdk_pkt_read function
+	in opencdk/read-packet.c. This issue (which is a subset of the vendor's
+	GNUTLS-SA-2017-3 report) is fixed in 3.5.10.
+
+	Package:       gnutls28 @ 3.3.8-6+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7869
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2017-7244 (Medium)
+	The _pcre32_xclass function in pcre_xclass.c in libpcre1 in PCRE 8.40 allows
+	remote attackers to cause a denial of service (invalid memory read) via a
+	crafted file.
+
+	Package:       pcre3 @ 2:8.35-3.3+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7244
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2011-3389 (Medium)
+	The SSL protocol, as used in certain configurations in Microsoft Windows and
+	Microsoft Internet Explorer, Mozilla Firefox, Google Chrome, Opera, and other
+	products, encrypts data by using CBC mode with chained initialization vectors,
+	which allows man-in-the-middle attackers to obtain plaintext HTTP headers via
+	a blockwise chosen-boundary attack (BCBA) on an HTTPS session, in conjunction
+	with JavaScript code that uses (1) the HTML5 WebSocket API, (2) the Java
+	URLConnection API, or (3) the Silverlight WebClient API, aka a "BEAST" attack.
+
+	Package:       gnutls28 @ 3.3.8-6+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2011-3389
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2016-10266 (Medium)
+	LibTIFF 4.0.7 allows remote attackers to cause a denial of service
+	(divide-by-zero error and application crash) via a crafted TIFF image, related
+	to libtiff/tif_read.c:351:22.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10266
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-5335 (Medium)
+	The stream reading functions in lib/opencdk/read-packet.c in GnuTLS before
+	3.3.26 and 3.5.x before 3.5.8 allow remote attackers to cause a denial of
+	service (out-of-memory error and crash) via a crafted OpenPGP certificate.
+
+	Package:       gnutls28 @ 3.3.8-6+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5335
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2016-10269 (Medium)
+	LibTIFF 4.0.7 allows remote attackers to cause a denial of service (heap-based
+	buffer over-read) or possibly have unspecified other impact via a crafted TIFF
+	image, related to "READ of size 512" and libtiff/tif_unix.c:340:2.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10269
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-5969 (Low)
+	** DISPUTED ** libxml2 2.9.4, when used in recover mode, allows remote attackers
+	to cause a denial of service (NULL pointer dereference) via a crafted XML
+	document.  NOTE: The maintainer states "I would disagree of a CVE with the
+	Recover parsing option which should only be used for manual recovery at least
+	for XML parser."
+
+	Package:       libxml2 @ 2.9.1+dfsg1-5+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5969
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-8734 (Low)
+	Package:       subversion @ 1.8.10-6+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-8734
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2014-9913 (Low)
+	Buffer overflow in the list_files function in list.c in Info-Zip UnZip 6.0
+	allows remote attackers to cause a denial of service (crash) via vectors related
+	to the compression method.
+
+	Package:       unzip @ 6.0-16+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2014-9913
+	Layer:         e5f3328505b5987c3dee7dd4c68520bad6c84f93d74a0010a3f2458b686ff083
+
+CVE-2016-3119 (Low)
+	The process_db_args function in plugins/kdb/ldap/libkdb_ldap/ldap_principal2.c
+	in the LDAP KDB module in kadmind in MIT Kerberos 5 (aka krb5) through 1.13.4
+	and 1.14.x through 1.14.1 mishandles the DB argument, which allows remote
+	authenticated users to cause a denial of service (NULL pointer dereference and
+	daemon crash) via a crafted request to modify a principal.
+
+	Package:       krb5 @ 1.12.1+dfsg-19+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-3119
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2016-10009 (Low)
+	Untrusted search path vulnerability in ssh-agent.c in ssh-agent in OpenSSH
+	before 7.4 allows remote attackers to execute arbitrary local PKCS#11 modules by
+	leveraging control over a forwarded agent-socket.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10009
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-8690 (Low)
+	The bmp_getdata function in libjasper/bmp/bmp_dec.c in JasPer before 1.900.5
+	allows remote attackers to cause a denial of service (NULL pointer dereference)
+	via a crafted BMP image in an imginfo command.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-8690
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7407 (Low)
+	The ourWriteOut function in tool_writeout.c in curl 7.53.1 might allow
+	physically proximate attackers to obtain sensitive information from process
+	memory in opportunistic circumstances by reading a workstation screen during use
+	of a --write-out argument ending in a '%' character, which leads to a heap-based
+	buffer over-read.
+
+	Package:       curl @ 7.38.0-4+deb8u5
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7407
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2016-9844 (Low)
+	Buffer overflow in the zi_short function in zipinfo.c in Info-Zip UnZip 6.0
+	allows remote attackers to cause a denial of service (crash) via a large
+	compression method value in the central directory file header.
+
+	Package:       unzip @ 6.0-16+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9844
+	Layer:         e5f3328505b5987c3dee7dd4c68520bad6c84f93d74a0010a3f2458b686ff083
+
+CVE-2015-6563 (Low)
+	The monitor component in sshd in OpenSSH before 7.0 on non-OpenBSD platforms
+	accepts extraneous username data in MONITOR_REQ_PAM_INIT_CTX requests, which
+	allows local users to conduct impersonation attacks by leveraging any SSH
+	login access in conjunction with control of the sshd uid to send a crafted
+	MONITOR_REQ_PWNAM request, related to monitor.c and monitor_wrap.c.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-6563
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-10012 (Low)
+	The shared memory manager (associated with pre-authentication compression) in
+	sshd in OpenSSH before 7.4 does not ensure that a bounds check is enforced by
+	all compilers, which might allows local users to gain privileges by leveraging
+	access to a sandboxed privilege-separation process, related to the m_zback and
+	m_zlib data structures.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10012
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-3189 (Low)
+	Use-after-free vulnerability in bzip2recover in bzip2 1.0.6 allows remote
+	attackers to cause a denial of service (crash) via a crafted bzip2 file, related
+	to block ends set to before the start of the block.
+
+	Package:       bzip2 @ 1.0.6-7
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-3189
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2016-2781 (Low)
+	chroot in GNU coreutils, when used with --userspec, allows local users to escape
+	to the parent session via a crafted TIOCSTI ioctl call, which pushes characters
+	to the terminal's input buffer.
+
+	Package:       coreutils @ 8.23-4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-2781
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2015-5180 (Low)
+	Package:       glibc @ 2.19-18+deb8u7
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-5180
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2016-8886 (Low)
+	The jas_malloc function in libjasper/base/jas_malloc.c in JasPer before 1.900.11
+	allows remote attackers to have unspecified impact via a crafted file, which
+	triggers a memory allocation failure.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-8886
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-3658 (Low)
+	The TIFFWriteDirectoryTagLongLong8Array function in tif_dirwrite.c in the
+	tiffset tool in LibTIFF 4.0.6 and earlier allows remote attackers to cause a
+	denial of service (out-of-bounds read) via vectors involving the ma variable.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-3658
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-10255 (Low)
+	The __libelf_set_rawdata_wrlock function in elf_getdata.c in elfutils before
+	0.168 allows remote attackers to cause a denial of service (crash) via a crafted
+	(1) sh_off or (2) sh_size ELF header value, which triggers a memory allocation
+	failure.
+
+	Package:       elfutils @ 0.159-4.2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10255
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-7098 (Low)
+	Race condition in wget 1.17 and earlier, when used in recursive or mirroring
+	mode to download a single file, might allow remote servers to bypass intended
+	access list restrictions by keeping an HTTP connection open.
+
+	Package:       wget @ 1.16-1+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-7098
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2016-10011 (Low)
+	authfile.c in sshd in OpenSSH before 7.4 does not properly consider the effects
+	of realloc on buffer contents, which might allow local users to obtain sensitive
+	private-key information by leveraging access to a privilege-separated child
+	process.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10011
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-10254 (Low)
+	The allocate_elf function in common.h in elfutils before 0.168 allows remote
+	attackers to cause a denial of service (crash) via a crafted ELF file, which
+	triggers a memory allocation failure.
+
+	Package:       elfutils @ 0.159-4.2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10254
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-9401 (Low)
+	popd in bash might allow local users to bypass the restricted shell and cause a
+	use-after-free via a crafted address.
+
+	Package:       bash @ 4.3-11+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9401
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2010-4756 (Negligible)
+	The glob implementation in the GNU C Library (aka glibc or libc6) allows remote
+	authenticated users to cause a denial of service (CPU and memory consumption)
+	via crafted glob expressions that do not match any pathnames, as demonstrated
+	by glob expressions in STAT commands to an FTP daemon, a different vulnerability
+	than CVE-2010-2632.
+
+	Package:       glibc @ 2.19-18+deb8u7
+	Link:          https://security-tracker.debian.org/tracker/CVE-2010-4756
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2015-5186 (Negligible)
+	Package:       audit @ 1:2.4-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-5186
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2016-9600 (Negligible)
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9600
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-9583 (Negligible)
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9583
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2013-7040 (Negligible)
+	Python 2.7 before 3.4 only uses the last eight bits of the prefix to randomize
+	hash values, which causes it to compute hash values without restricting
+	the ability to trigger hash collisions predictably and makes it easier for
+	context-dependent attackers to cause a denial of service (CPU consumption)
+	via crafted input to an application that maintains a hash table.  NOTE: this
+	vulnerability exists because of an incomplete fix for CVE-2012-1150.
+
+	Package:       python2.7 @ 2.7.9-2+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2013-7040
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2017-5563 (Negligible)
+	LibTIFF version 4.0.7 is vulnerable to a heap-based buffer over-read in
+	tif_lzw.c resulting in DoS or code execution via a crafted bmp image to
+	tools/bmp2tiff.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5563
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-5498 (Negligible)
+	libjasper/include/jasper/jas_math.h in JasPer 1.900.17 allows remote attackers
+	to cause a denial of service (crash) via vectors involving left shift of a
+	negative value.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5498
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-9539 (Negligible)
+	tools/tiffcrop.c in libtiff 4.0.6 has an out-of-bounds read in
+	readContigTilesIntoBuffer(). Reported as MSVR 35092.
+
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9539
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2008-4108 (Negligible)
+	Tools/faqwiz/move-faqwiz.sh (aka the generic FAQ wizard moving tool) in Python
+	2.4.5 might allow local users to overwrite arbitrary files via a symlink
+	attack on a tmp$RANDOM.tmp temporary file.  NOTE: there may not be common usage
+	scenarios in which tmp$RANDOM.tmp is located in an untrusted directory.
+
+	Package:       python-defaults @ 2.7.9-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2008-4108
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-9393 (Negligible)
+	The jpc_pi_nextrpcl function in jpc_t2cod.c in JasPer before 1.900.17 allows
+	remote attackers to cause a denial of service (assertion failure) via a crafted
+	file.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9393
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2015-5224 (Negligible)
+	Package:       util-linux @ 2.25.2-6
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-5224
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2015-5218 (Negligible)
+	Buffer overflow in text-utils/colcrt.c in colcrt in util-linux before 2.27
+	allows local users to cause a denial of service (crash) via a crafted file,
+	related to the page global variable.
+
+	Package:       util-linux @ 2.25.2-6
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-5218
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2012-3878 (Negligible)
+	Package:       perl @ 5.20.2-3+deb8u6
+	Link:          https://security-tracker.debian.org/tracker/CVE-2012-3878
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2011-4116 (Negligible)
+	Package:       perl @ 5.20.2-3+deb8u6
+	Link:          https://security-tracker.debian.org/tracker/CVE-2011-4116
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2017-5504 (Negligible)
+	The jpc_undo_roi function in libjasper/jpc/jpc_dec.c in JasPer 1.900.27 allows
+	remote attackers to cause a denial of service (invalid memory read and crash)
+	via a crafted image.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5504
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-9394 (Negligible)
+	The jas_seq2d_create function in jas_seq.c in JasPer before 1.900.17 allows
+	remote attackers to cause a denial of service (assertion failure) via a crafted
+	file.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9394
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2007-6755 (Negligible)
+	The NIST SP 800-90A default statement of the Dual Elliptic Curve Deterministic
+	Random Bit Generation (Dual_EC_DRBG) algorithm contains point Q constants with
+	a possible relationship to certain "skeleton key" values, which might allow
+	context-dependent attackers to defeat cryptographic protection mechanisms by
+	leveraging knowledge of those values.  NOTE: this is a preliminary CVE for
+	Dual_EC_DRBG; future research may provide additional details about point Q and
+	associated attacks, and could potentially lead to a RECAST or REJECT of this
+	CVE.
+
+	Package:       openssl @ 1.0.1t-1+deb8u6
+	Link:          https://security-tracker.debian.org/tracker/CVE-2007-6755
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2007-2768 (Negligible)
+	OpenSSH, when using OPIE (One-Time Passwords in Everything) for PAM, allows
+	remote attackers to determine the existence of certain user accounts, which
+	displays a different response if the user account exists and is configured to
+	use one-time passwords (OTP), a similar issue to CVE-2007-2243.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2007-2768
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-9392 (Negligible)
+	The calcstepsizes function in jpc_dec.c in JasPer before 1.900.17 allows remote
+	attackers to cause a denial of service (assertion failure) via a crafted file.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9392
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-10248 (Negligible)
+	The jpc_tsfb_synthesize function in jpc_tsfb.c in JasPer before 1.900.9 allows
+	remote attackers to cause a denial of service (NULL pointer dereference) via
+	vectors involving an empty sequence.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10248
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2010-4051 (Negligible)
+	The regcomp implementation in the GNU C Library (aka glibc or libc6) through
+	2.11.3, and 2.12.x through 2.12.2, allows context-dependent attackers to cause
+	a denial of service (application crash) via a regular expression containing
+	adjacent bounded repetitions that bypass the intended RE_DUP_MAX limitation,
+	as demonstrated by a {10,}{10,}{10,}{10,}{10,} sequence in the proftpd.gnu.c
+	exploit for ProFTPD, related to a "RE_DUP_MAX overflow."
+
+	Package:       glibc @ 2.19-18+deb8u7
+	Link:          https://security-tracker.debian.org/tracker/CVE-2010-4051
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2017-6850 (Negligible)
+	The jp2_cdef_destroy function in jp2_cod.c in JasPer before 2.0.13 allows remote
+	attackers to cause a denial of service (NULL pointer dereference) via a crafted
+	image.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-6850
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2012-0039 (Negligible)
+	** DISPUTED ** GLib 2.31.8 and earlier, when the g_str_hash function is used,
+	computes hash values without restricting the ability to trigger hash collisions
+	predictably, which allows context-dependent attackers to cause a denial of
+	service (CPU consumption) via crafted input to an application that maintains a
+	hash table.  NOTE: this issue may be disputed by the vendor; the existence of
+	the g_str_hash function is not a vulnerability in the library, because callers
+	of g_hash_table_new and g_hash_table_new_full can specify an arbitrary hash
+	function that is appropriate for the application.
+
+	Package:       glib2.0 @ 2.42.1-1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2012-0039
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2015-8985 (Negligible)
+	The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows
+	context-dependent attackers to cause a denial of service (assertion failure
+	and application crash) via vectors related to extended regular expression
+	processing.
+
+	Package:       glibc @ 2.19-18+deb8u7
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-8985
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2017-5505 (Negligible)
+	The jas_matrix_asl function in jas_seq.c in JasPer 1.900.27 allows remote
+	attackers to cause a denial of service (invalid memory read and crash) via a
+	crafted image.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5505
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2014-8166 (Negligible)
+	Package:       cups @ 1.7.5-11+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2014-8166
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2004-0971 (Negligible)
+	The krb5-send-pr script in the kerberos5 (krb5) package in Trustix Secure Linux
+	1.5 through 2.1, and possibly other operating systems, allows local users to
+	overwrite files via a symlink attack on temporary files.
+
+	Package:       krb5 @ 1.12.1+dfsg-19+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2004-0971
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2014-8127 (Negligible)
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2014-8127
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-9397 (Negligible)
+	The jpc_dequantize function in jpc_dec.c in JasPer 1.900.13 allows remote
+	attackers to cause a denial of service (assertion failure) via unspecified
+	vectors.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9397
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-3177 (Negligible)
+	Multiple use-after-free and double-free vulnerabilities in gifcolor.c in GIFLIB
+	5.1.2 have unspecified impact and attack vectors.
+
+	Package:       giflib @ 4.1.6-11+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-3177
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-5500 (Negligible)
+	libjasper/jpc/jpc_dec.c in JasPer 1.900.17 allows remote attackers to cause a
+	denial of service (crash) via vectors involving left shift of a negative value.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5500
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-9388 (Negligible)
+	The ras_getcmap function in ras_dec.c in JasPer before 1.900.14 allows remote
+	attackers to cause a denial of service (assertion failure) via a crafted image
+	file.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9388
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-1000110 (Negligible)
+	Package:       python2.7 @ 2.7.9-2+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-1000110
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-9395 (Negligible)
+	The jas_seq2d_create function in jas_seq.c in JasPer before 1.900.25 allows
+	remote attackers to cause a denial of service (assertion failure) via a crafted
+	file.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9395
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-8283 (Negligible)
+	dpkg-source in dpkg through 1.8.23 is able to use a non-GNU patch program and
+	does not offer a protection mechanism for blank-indented diff hunks, which
+	allows remote attackers to conduct directory traversal attacks via a crafted
+	Debian source package, as demonstrated by use of dpkg-source on NetBSD.
+
+	Package:       dpkg @ 1.17.27
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-8283
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2016-9387 (Negligible)
+	Integer overflow in the jpc_dec_process_siz function in libjasper/jpc/jpc_dec.c
+	in JasPer before 1.900.13 allows remote attackers to have unspecified impact via
+	a crafted file, which triggers an assertion failure.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9387
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2013-4392 (Negligible)
+	systemd, when updating file permissions, allows local users to change the
+	permissions and SELinux security contexts for arbitrary files via a symlink
+	attack on unspecified files.
+
+	Package:       systemd @ 215-17+deb8u6
+	Link:          https://security-tracker.debian.org/tracker/CVE-2013-4392
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2010-4052 (Negligible)
+	Stack consumption vulnerability in the regcomp implementation in the GNU C
+	Library (aka glibc or libc6) through 2.11.3, and 2.12.x through 2.12.2, allows
+	context-dependent attackers to cause a denial of service (resource exhaustion)
+	via a regular expression containing adjacent repetition operators, as
+	demonstrated by a {10,}{10,}{10,}{10,} sequence in the proftpd.gnu.c exploit for
+	ProFTPD.
+
+	Package:       glibc @ 2.19-18+deb8u7
+	Link:          https://security-tracker.debian.org/tracker/CVE-2010-4052
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2016-10010 (Negligible)
+	sshd in OpenSSH before 7.4, when privilege separation is not used, creates
+	forwarded Unix-domain sockets as root, which might allow local users to gain
+	privileges via unspecified vectors, related to serverloop.c.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-10010
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2017-7246 (Negligible)
+	Stack-based buffer overflow in the pcre32_copy_substring function in pcre_get.c
+	in libpcre1 in PCRE 8.40 allows remote attackers to cause a denial of service
+	(WRITE of size 268) or possibly have unspecified other impact via a crafted
+	file.
+
+	Package:       pcre3 @ 2:8.35-3.3+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7246
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2008-3234 (Negligible)
+	sshd in OpenSSH 4 on Debian GNU/Linux, and the 20070303 OpenSSH snapshot,
+	allows remote authenticated users to obtain access to arbitrary SELinux roles
+	by appending a :/ (colon slash) sequence, followed by the role name, to the
+	username.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2008-3234
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-9390 (Negligible)
+	The jas_seq2d_create function in jas_seq.c in JasPer before 1.900.14 allows
+	remote attackers to cause a denial of service (assertion failure) via a crafted
+	image file.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9390
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2005-2541 (Negligible)
+	Tar 1.15.1 does not properly warn the user when extracting setuid or setgid
+	files, which may allow local users or remote attackers to gain privileges.
+
+	Package:       tar @ 1.27.1-2+deb8u1
+	Link:          https://security-tracker.debian.org/tracker/CVE-2005-2541
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2016-9389 (Negligible)
+	The jpc_irct and jpc_iict functions in jpc_mct.c in JasPer before 1.900.14 allow
+	remote attackers to cause a denial of service (assertion failure).
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9389
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-9391 (Negligible)
+	The jpc_bitstream_getbits function in jpc_bs.c in JasPer before 2.0.10 allows
+	remote attackers to cause a denial of service (assertion failure) via a very
+	large integer.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9391
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-9399 (Negligible)
+	The calcstepsizes function in jpc_dec.c in JasPer 1.900.22 allows remote
+	attackers to cause a denial of service (assertion failure) via unspecified
+	vectors.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9399
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-7245 (Negligible)
+	Stack-based buffer overflow in the pcre32_copy_substring function in pcre_get.c
+	in libpcre1 in PCRE 8.40 allows remote attackers to cause a denial of service
+	(WRITE of size 4) or possibly have unspecified other impact via a crafted file.
+
+	Package:       pcre3 @ 2:8.35-3.3+deb8u4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-7245
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2016-9396 (Negligible)
+	The JPC_NOMINALGAIN function in jpc_t1cod.c in JasPer before 1.900.12
+	allows remote attackers to cause a denial of service (assertion failure) via
+	unspecified vectors.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9396
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2014-8130 (Negligible)
+	Package:       tiff @ 4.0.3-12.3+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2014-8130
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2017-5499 (Negligible)
+	Integer overflow in libjasper/jpc/jpc_dec.c in JasPer 1.900.17 allows remote
+	attackers to cause a denial of service (crash) via a crafted file.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5499
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2010-0928 (Negligible)
+	OpenSSL 0.9.8i on the Gaisler Research LEON3 SoC on the Xilinx Virtex-II Pro
+	FPGA uses a Fixed Width Exponentiation (FWE) algorithm for certain signature
+	calculations, and does not verify the signature before providing it to a caller,
+	which makes it easier for physically proximate attackers to determine the
+	private key via a modified supply voltage for the microprocessor, related to a
+	"fault-based attack."
+
+	Package:       openssl @ 1.0.1t-1+deb8u6
+	Link:          https://security-tracker.debian.org/tracker/CVE-2010-0928
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2016-9063 (Negligible)
+	Package:       expat @ 2.1.0-6+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9063
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2016-3739 (Negligible)
+	The (1) mbed_connect_step1 function in lib/vtls/mbedtls.c and (2)
+	polarssl_connect_step1 function in lib/vtls/polarssl.c in cURL and libcurl
+	before 7.49.0, when using SSLv3 or making a TLS connection to a URL that uses a
+	numerical IP address, allow remote attackers to spoof servers via an arbitrary
+	valid certificate.
+
+	Package:       curl @ 7.38.0-4+deb8u5
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-3739
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2017-2616 (Negligible)
+	Package:       util-linux @ 2.25.2-6
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-2616
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2011-3374 (Negligible)
+	Package:       apt @ 1.0.9.8.4
+	Link:          https://security-tracker.debian.org/tracker/CVE-2011-3374
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2015-3276 (Negligible)
+	The nss_parse_ciphers function in libraries/libldap/tls_m.c in OpenLDAP does
+	not properly parse OpenSSL-style multi-keyword mode cipher strings, which might
+	cause a weaker than intended cipher to be used and allow remote attackers to
+	have unspecified impact via unknown vectors.
+
+	Package:       openldap @ 2.4.40+dfsg-1+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2015-3276
+	Layer:         b60cd14f420272e80259c900dc59fd2c123cf03c1b3cb9f243b1f9750962d4fc
+
+CVE-2007-5686 (Negligible)
+	initscripts in rPath Linux 1 sets insecure permissions for the /var/log/btmp
+	file, which allows local users to obtain sensitive information regarding
+	authentication attempts.  NOTE: because sshd detects the insecure permissions
+	and does not log certain events, this also prevents sshd from logging failed
+	authentication attempts by remote attackers.
+
+	Package:       shadow @ 1:4.2-3+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2007-5686
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2016-9398 (Negligible)
+	The jpc_floorlog2 function in jpc_math.c in JasPer before 1.900.17 allows remote
+	attackers to cause a denial of service (assertion failure) via unspecified
+	vectors.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-9398
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2007-2243 (Negligible)
+	OpenSSH 4.6 and earlier, when ChallengeResponseAuthentication is enabled, allows
+	remote attackers to determine the existence of user accounts by attempting to
+	authenticate via S/KEY, which displays a different response if the user account
+	exists, a similar issue to CVE-2001-1483.
+
+	Package:       openssh @ 1:6.7p1-5+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2007-2243
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+
+CVE-2017-6851 (Negligible)
+	The jas_matrix_bindsub function in jas_seq.c in JasPer 2.0.10 allows remote
+	attackers to cause a denial of service (invalid read) via a crafted image.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-6851
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2013-4235 (Negligible)
+	Package:       shadow @ 1:4.2-3+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2013-4235
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2017-5502 (Negligible)
+	libjasper/jp2/jp2_dec.c in JasPer 1.900.17 allows remote attackers to cause a
+	denial of service (crash) via vectors involving left shift of a negative value.
+
+	Package:       jasper @ 1.900.1-debian1-2.4+deb8u2
+	Link:          https://security-tracker.debian.org/tracker/CVE-2017-5502
+	Layer:         c60154b1a02725681858803d7e80d939c2ab9a8d3f97fe80fb3111eb2baa749a
+
+CVE-2016-4484 (Negligible)
+	The Debian initrd script for the cryptsetup package 2:1.7.3-2 and earlier allows
+	physically proximate attackers to gain shell access via many log in attempts
+	with an invalid password.
+
+	Package:       cryptsetup @ 2:1.6.6-5
+	Link:          https://security-tracker.debian.org/tracker/CVE-2016-4484
+	Layer:         bffd0cf2a38424e6ba3740a575c945c3738fbd1e98977ff18f04cdbf264398c2
+
+CVE-2013-0340 (Negligible)
+	expat 2.1.0 and earlier does not properly handle entities expansion unless an
+	application developer uses the XML_SetEntityDeclHandler function, which allows
+	remote attackers to cause a denial of service (resource consumption), send
+	HTTP requests to intranet servers, or read arbitrary files via a crafted XML
+	document, aka an XML External Entity (XXE) issue.  NOTE: it could be argued that
+	because expat already provides the ability to disable external entity expansion,
+	the responsibility for resolving this issue lies with application developers;
+	according to this argument, this entry should be REJECTed, and each affected
+	application would need its own CVE.
+
+	Package:       expat @ 2.1.0-6+deb8u3
+	Link:          https://security-tracker.debian.org/tracker/CVE-2013-0340
+	Layer:         9a0ef2caa698706398294415e9899d0798fb173985b024325bd8e9f34ee4415d
+

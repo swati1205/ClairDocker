@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>plugin</artifactId>
+    <version>2.3</version>
+    <relativePath />
+  </parent>
+  <groupId>org.jenkins-ci.plugins</groupId>
+  <artifactId>Docker-Security-Scanner</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>hpi</packaging>
+
+  <properties>
+    <!-- Baseline Jenkins version you use to build the plugin. Users must have this version or newer to run. -->
+    <jenkins.version>1.625.3</jenkins.version>
+    <!-- Java Level to use. Java 7 required when using core >= 1.612 -->
+    <java.level>7</java.level>
+    <!-- Jenkins Test Harness version you use to test the plugin. -->
+    <!-- For Jenkins version >= 1.580.1 use JTH 2.x or higher. -->
+    <jenkins-test-harness.version>2.1</jenkins-test-harness.version>
+    <!-- Other properties you may want to use:
+         ~ hpi-plugin.version: The HPI Maven Plugin version used by the plugin..
+         ~ stapler-plugin.version: The Stapler Maven plugin version required by the plugin.
+    -->
+    
+    <!-- Hudson properties: see http://wiki.hudson-ci.org/display/HUDSON/Building+a+software+project#Buildingasoftwareproject-HudsonSetEnvironmentVariables -->
+
+    <jenkins.buildNumber>${env.BUILD_NUMBER}</jenkins.buildNumber>
+    <jenkins.buildTag>${env.BUILD_TAG}</jenkins.buildTag>
+    <jenkins.cvsBranch>${env.CVS_BRANCH}</jenkins.cvsBranch>
+    <jenkins.executorNumber>${env.EXECUTOR_NUMBER}</jenkins.executorNumber>
+    <jenkins.hudsonUrl>${env.HUDSON_URL}</jenkins.hudsonUrl>
+    <jenkins.javaHome>${env.JAVA_HOME}</jenkins.javaHome>
+    <jenkins.jobName>${env.JOB_NAME}</jenkins.jobName>
+    <jenkins.svnRevision>${env.SVN_REVISION}</jenkins.svnRevision>
+    <jenkins.workspace>${env.WORKSPACE}</jenkins.workspace>
+</properties>
+  
+  <name>Docker Security Scanner</name>
+  <description>Scans Local Docker images for any security vulnerabilities</description>
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin</url>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
+
+   <distributionManagement>
+    <repository>
+      <id>maven.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+</project>

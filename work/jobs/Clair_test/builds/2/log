@@ -1,0 +1,24 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building remotely on [8mha:AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQifT+gOw0BBBwhhsQAAAA=[0mNode1 in workspace /var/tmp/Jenkins_Slave2/workspace/Clair_test
+$ /home/jenkins/analyze-local-images -endpoint http://10.242.138.116:6060 -my-address 10.242.138.115 tomcat
+2017-04-20 18:44:40.067669 I | Saving tomcat to local disk (this may take some time)
+2017-04-20 18:45:26.027767 I | Retrieving image history
+2017-04-20 18:45:26.115086 I | Could not get image's history: %!s(<nil>)
+ERROR: Build step failed with exception
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.util.NoSuchElementException
+	at java.util.Scanner.throwFor(Scanner.java:907)
+	at java.util.Scanner.next(Scanner.java:1416)
+	at org.jenkinsci.plugins.clairdockerscannerbuildstep.Text_HTMLConverter.text_to_html(Text_HTMLConverter.java:59)
+	at org.jenkinsci.plugins.clairdockerscannerbuildstep.ScannerExecuter.execute(ScannerExecuter.java:101)
+	at org.jenkinsci.plugins.clairdockerscannerbuildstep.ClairDockerScannerBuilder.perform(ClairDockerScannerBuilder.java:135)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:785)
+	at hudson.model.Build$BuildExecution.build(Build.java:205)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:162)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:537)
+	at hudson.model.Run.execute(Run.java:1741)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:408)
+Build step 'Clair Docker Vulnerability Scanner' marked build as failure
+Finished: FAILURE

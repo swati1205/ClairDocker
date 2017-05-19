@@ -1,0 +1,33 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+
+    See global.jelly for a general discussion about jelly script.
+  -->
+     <f:block>
+     <b>Docker Image to scan</b>
+   </f:block>
+    <f:entry title="Image Name" field="localImage" value="${instance.localimage}">
+	  <f:textbox />
+    </f:entry>
+     <f:entry title="Local Analyzer Path" field="localAnalyzerPath">
+      <f:textbox />
+    </f:entry>
+     <f:block>
+     <b>Quality Gate</b>
+   </f:block>
+   <f:optionalBlock title="Set Quality Gates" inline="true" name="Severity" checked="${instance.Severity}" >
+  <f:block> <b>Threshold to mark build Failed</b></f:block>
+          <f:entry title="High" field="high" > <f:textbox default="999" /> </f:entry>
+         <f:entry title="Medium" field="medium"> <f:textbox default="999" /></f:entry>
+            
+          <f:entry title="Low" field="low"> <f:textbox default="999" /></f:entry>        
+        
+</f:optionalBlock> 
+    
+
+
+
+    
+ </j:jelly>

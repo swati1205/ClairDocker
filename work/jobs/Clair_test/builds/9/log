@@ -1,0 +1,21 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building remotely on [8mha:AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQifT+gOw0BBBwhhsQAAAA=[0mNode1 in workspace /var/tmp/Jenkins_Slave2/workspace/Clair_test
+$ /home/jenkins/analyze-local-images -endpoint http://10.242.138.116:6060 -my-address 10.242.138.115 tomcat:8.0
+2017-04-21 12:43:37.457868 I | Saving tomcat:8.0 to local disk (this may take some time)
+2017-04-21 12:44:13.356870 I | Retrieving image history
+2017-04-21 12:44:13.469697 I | Setting up HTTP server (allowing: 10.242.138.116)
+2017-04-21 12:44:13.639421 I | Analyzing 11 layers... 
+2017-04-21 12:44:13.639473 I | Analyzing 60486aca0b22b580278814ec001842be14faab75740133d80bcc40bc533fc055
+2017-04-21 12:44:13.827623 I | Analyzing a991af8fdb90f172243f00f8d2598cef3b72d63259275240f9cf1a6efdcff688
+2017-04-21 12:44:13.892969 I | Analyzing 3fe8ce6650a03e7803c568057fee454ba96f8447de7a118d9f2bf23757ab675a
+2017-04-21 12:44:13.950916 I | Analyzing 7f722e5a5457a4f43470934b221b9f472d4480d9a7ba8aa7156292ee64057676
+2017-04-21 12:44:14.040270 I | Analyzing aa8631cf2239a0265028a629fc9d808443b76f6fbd68b830d4ac05ab21846f8a
+2017-04-21 12:44:14.092023 I | Analyzing ec5501373216bf5045ce06b0fd514dd6f960a72864417b564ce6e2db7892a6fb
+2017-04-21 12:44:14.181535 I | Analyzing d6e8bb64882c28b833bd40140bc7bbdb9d90dced2098accc69bc2f7225e34ce0
+2017-04-21 12:44:14.232625 I | Analyzing 4422c3eedaf872aae7b04829a2fb40f4e89274113fec2a7f5f7c3f40a06d4ade
+2017-04-21 12:44:14.351228 I | Analyzing cb34cfd4838e4e4173c64d117dfefe44ab318a17f5bdcef7ce51b6a4da97ddc0
+2017-04-21 12:44:14.444258 I | Analyzing f2ff8db6276f8a82ab5d4e61b5c4afaa38c70c61d7a30bc6170df884949f9530
+2017-04-21 12:44:14.510072 I | Analyzing 978a36a2424ddbeec9efebcf4e04cb76d94488ae943f77700537e5025aabc744
+2017-04-21 12:44:14.564978 I | Retrieving image's vulnerabilities
+Archiving artifacts
+Finished: SUCCESS

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slave>
+  <name>Node1</name>
+  <description></description>
+  <remoteFS>/var/tmp/Jenkins_Slave2</remoteFS>
+  <numExecutors>1</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.9">
+    <host>10.242.138.115</host>
+    <port>22</port>
+    <credentialsId>e21d2bed-caba-4a2f-839c-43c733e87b6f</credentialsId>
+    <maxNumRetries>0</maxNumRetries>
+    <retryWaitTime>0</retryWaitTime>
+  </launcher>
+  <label></label>
+  <nodeProperties/>
+  <userId>anonymous</userId>
+</slave>
